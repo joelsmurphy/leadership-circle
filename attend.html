@@ -37,53 +37,118 @@
     </div>
   </section>
 
-  <main class="movement-content">
-
-    <div class="msection fade-in">
-      <span class="section-label">Orientation</span>
-      <p>Most of us move too quickly from noticing to explaining. We see a signal — declining engagement, a restless conversation, a budget that's tighter than it should be — and we immediately reach for a story about what it means. This movement slows that reflex. Before you interpret or decide, you are invited simply to look. What is already present? What are you noticing at the edges? And what might you be filtering out because it's inconvenient, unfamiliar, or too costly to take seriously?</p>
-      <a href="foi-resources.html" class="resource-callout">
-        <div class="resource-callout-inner">
-          <span class="resource-callout-label">Resource Space</span>
-          <span class="resource-callout-name">Explore the five compound drivers in depth</span>
-        </div>
-        <span class="resource-callout-arrow">→</span>
-      </a>
+  <!-- PROGRESS TRACKER -->
+  <div class="attend-progress" id="attendProgress" aria-hidden="true">
+    <div class="attend-progress-inner">
+      <div class="progress-step-item active" data-for-step="1">
+        <span class="progress-step-num">01</span>
+        <span class="progress-step-label">Encounter</span>
+      </div>
+      <div class="progress-line"></div>
+      <div class="progress-step-item" data-for-step="2">
+        <span class="progress-step-num">02</span>
+        <span class="progress-step-label">Surface</span>
+      </div>
+      <div class="progress-line"></div>
+      <div class="progress-step-item" data-for-step="3">
+        <span class="progress-step-num">03</span>
+        <span class="progress-step-label">Reframe</span>
+      </div>
+      <div class="progress-line"></div>
+      <div class="progress-step-item" data-for-step="4">
+        <span class="progress-step-num">04</span>
+        <span class="progress-step-label">Apply</span>
+      </div>
+      <div class="progress-line"></div>
+      <div class="progress-step-item" data-for-step="5">
+        <span class="progress-step-num">05</span>
+        <span class="progress-step-label">Integrate</span>
+      </div>
     </div>
+  </div>
 
-    <div class="msection">
-      <span class="section-label">Locate Yourself</span>
-      <p>Choose the statement that most honestly reflects where you are right now.</p>
+  <!-- STEP EXPERIENCE -->
+  <main class="attend-steps">
+
+    <p class="attend-save-notice">Your responses are saved automatically in this browser</p>
+
+    <!-- ===================== -->
+    <!-- STEP 1 — ENCOUNTER    -->
+    <!-- ===================== -->
+    <section class="attend-step" id="step-encounter" data-step="1">
+
+      <div class="step-badge">
+        <span class="step-num-pill">01</span>
+        <span class="step-name-pill">Encounter</span>
+      </div>
+
+      <h2 class="step-heading">Something is already happening in your context.<br>What are you noticing?</h2>
+      <p class="step-intro">Before orientation or explanation — a scenario. Read it, and notice what it stirs.</p>
+
+      <div class="encounter-card">
+        <span class="encounter-card-label">Scenario — 2027</span>
+        <p>A small church in rural Nova Scotia has lost its third pastor in four years. The congregation is tired, the budget is tighter than it's been in a decade, and the council chair has just read about a network of three Halifax churches that launched a shared ministry innovation team together. She sits with it for a moment. Not with envy. With a question she can't quite name.</p>
+        <p>She's been in ministry leadership for twenty-two years. She knows how to adapt. But something about this moment feels different — not just harder, but differently shaped. Like the old maps don't cover the terrain she's actually standing on.</p>
+        <p><em>Innovation always seems to happen somewhere else. Why?</em></p>
+      </div>
+
+      <div class="attend-response">
+        <label class="attend-response-label" for="r-encounter">Your first response</label>
+        <textarea
+          id="r-encounter"
+          class="attend-textarea"
+          data-key="encounter"
+          placeholder="What does this stir in you? Write whatever surfaces — don't edit yourself."
+          rows="4"
+        ></textarea>
+        <span class="attend-save-hint" id="hint-encounter">auto-saved</span>
+      </div>
+
+    </section>
+
+    <!-- ===================== -->
+    <!-- STEP 2 — SURFACE      -->
+    <!-- ===================== -->
+    <section class="attend-step" id="step-surface" data-step="2">
+
+      <div class="step-badge">
+        <span class="step-num-pill">02</span>
+        <span class="step-name-pill">Surface</span>
+      </div>
+
+      <h2 class="step-heading">Where are you starting from?</h2>
+      <p class="step-intro">Choose the statement that most honestly reflects your current position. There's no right answer — only an honest one.</p>
+
       <div class="locate-grid">
-        <div class="locate-option">
+        <div class="locate-option" data-option-key="overwhelmed">
           <div class="locate-option-header">
             <span class="locate-label">I'm overwhelmed. I don't have margin to attend to much of anything right now.</span>
             <span class="locate-chevron">+</span>
           </div>
           <div class="locate-response">That's an honest place to begin. The inability to attend is itself a signal worth naming. What is making attention so costly right now?</div>
         </div>
-        <div class="locate-option">
+        <div class="locate-option" data-option-key="disoriented">
           <div class="locate-option-header">
             <span class="locate-label">I can see that things are changing, but I'm not sure what I'm actually looking at.</span>
             <span class="locate-chevron">+</span>
           </div>
           <div class="locate-response">That disorientation is appropriate to the moment. This movement isn't asking you to understand yet — just to notice. Stay with what you're seeing before you reach for an explanation.</div>
         </div>
-        <div class="locate-option">
+        <div class="locate-option" data-option-key="troubled">
           <div class="locate-option-header">
             <span class="locate-label">I've been paying attention, but what I'm noticing troubles me and I don't know what to do with it.</span>
             <span class="locate-chevron">+</span>
           </div>
           <div class="locate-response">The move from noticing to action is not the goal here. Sit with what's troubling you a little longer. Name it before you try to fix it.</div>
         </div>
-        <div class="locate-option">
+        <div class="locate-option" data-option-key="energized">
           <div class="locate-option-header">
             <span class="locate-label">I'm energized by what I'm seeing and want to move quickly.</span>
             <span class="locate-chevron">+</span>
           </div>
           <div class="locate-response">The energy is worth something — hold it. But fast movement from noticing to responding can skip the harder work of understanding what you're actually seeing. Let the attention deepen before you act.</div>
         </div>
-        <div class="locate-option">
+        <div class="locate-option" data-option-key="suspicious">
           <div class="locate-option-header">
             <span class="locate-label">I suspect I'm not seeing what matters most — and I'm not sure how to change that.</span>
             <span class="locate-chevron">+</span>
@@ -91,96 +156,272 @@
           <div class="locate-response">That suspicion is worth trusting. What — or who — might be outside your current frame of attention? This movement invites you to widen before you narrow.</div>
         </div>
       </div>
-    </div>
 
-    <div class="quote-block">
-      <blockquote>"The five compound drivers are not separate trends to be managed but a single, entangled condition — a landscape that leaders must learn to inhabit, read, and respond to faithfully."</blockquote>
-      <cite>Interpretive Field Guide — Futuring Hub</cite>
-    </div>
+      <div class="attend-response" style="margin-top: 1.75rem;">
+        <label class="attend-response-label" for="r-surface">What does your choice reveal?</label>
+        <textarea
+          id="r-surface"
+          class="attend-textarea"
+          data-key="surface"
+          placeholder="What does choosing this tell you about where you are right now — in your leadership, your community, or this season?"
+          rows="3"
+        ></textarea>
+        <span class="attend-save-hint" id="hint-surface">auto-saved</span>
+      </div>
 
-    <div class="scenario-card">
-      <span class="scenario-label">Scenario</span>
-      <p>It is 2027. A small church in rural Nova Scotia has lost its third pastor in four years. Its council chair reads about a network of three Halifax churches that recently launched a shared ministry innovation team. She asks: "Why does innovation always seem to happen somewhere else?"</p>
-      <p>Her question surfaces without self-pity — it is a genuine inquiry into the conditions that make innovation possible or impossible in a given context. <em>What forces are shaping innovation in your context right now — and are you genuinely attending to them?</em></p>
-    </div>
+    </section>
 
-    <div class="msection">
-      <span class="section-label">Reflect</span>
-      <ol class="reflect-list">
-        <li>Which of the five compound drivers resonates most strongly in your context right now — ecosystem shifts, diminished imagination, AI and digital change, ambivalence, or constraining instability? What makes it feel most present?</li>
-        <li>What signals of change related to innovation are you noticing in your ministry context that you haven't yet named out loud? What are you observing at the edges?</li>
-        <li>Where have you been too busy, too overwhelmed, or too uncertain to attend carefully to what is shaping innovation in your organization? What has that cost you?</li>
-      </ol>
-    </div>
+    <!-- ===================== -->
+    <!-- STEP 3 — REFRAME      -->
+    <!-- ===================== -->
+    <section class="attend-step" id="step-reframe" data-step="3">
 
-    <div class="disruption-block">
-      <span class="disruption-tag">Challenge</span>
-      <h3 class="disruption-title">What You're Not Looking At</h3>
-      <p class="disruption-framing">The things we avoid attending to rarely go away. They tend to shape us more than the things we face directly.</p>
-      <p class="disruption-prompt">"Name one signal in your context — something you are aware of, but have been consistently not looking at directly. Why have you been avoiding it? What would it cost you to look?"</p>
-    </div>
+      <div class="step-badge">
+        <span class="step-num-pill">03</span>
+        <span class="step-name-pill">Reframe</span>
+      </div>
 
-    <div class="msection">
-      <span class="section-label">Group Practice</span>
-      <h3 class="group-practice-title">Signal Mapping Together</h3>
-      <ol class="group-practice-steps">
-        <li>Before the meeting, invite each person to come prepared with one signal they've been noticing — something that feels important but hasn't been named yet in the group.</li>
-        <li>Go around the table. Each person names their signal in one sentence. No explanation yet. No response from others.</li>
-        <li>After everyone has shared, invite the group to name what they notice about what was named: Where are the patterns? What is notably absent?</li>
-        <li>Ask together: What are we attending to well as a leadership team — and what are we systematically not seeing?</li>
-        <li>Close by identifying one area of shared attention you want to cultivate over the next month.</li>
-      </ol>
-    </div>
+      <h2 class="step-heading">Five forces are already shaping what is possible in your context.</h2>
+      <p class="step-intro">These aren't problems to solve — they are conditions to understand. The field guide calls them compound drivers because they don't act alone; they compound each other. Select the ones you recognize in your context.</p>
 
-    <div class="msection">
-      <span class="section-label">Micro-Practice</span>
-      <h3 class="micro-practice-title">The Slow Look</h3>
-      <p>At the end of each day this week, take five minutes to write down one thing you noticed about your ministry context that surprised you, troubled you, or stayed with you. Don't explain it. Don't fix it. Just name it and move on.</p>
-      <div class="micro-aside">
-        <div class="micro-aside-item">
-          <span class="micro-aside-label">Why it matters</span>
-          <p>Attention is a practice before it is a skill. You cannot attend to what you haven't noticed, and noticing requires a deliberate slowing that most ministry environments don't naturally create.</p>
+      <div class="driver-tiles">
+
+        <div class="driver-tile" data-driver="Ecosystem">
+          <div class="driver-tile-check"></div>
+          <div class="driver-tile-name">Ecosystem</div>
+          <div class="driver-tile-blurb">Networks over lone pioneers</div>
         </div>
-        <div class="micro-aside-item">
-          <span class="micro-aside-label">Group version</span>
-          <p>Begin your next team meeting with two minutes of silence, then ask each person to name one thing they've been noticing that they haven't said aloud yet. Listen without responding. Let the room hold it.</p>
+
+        <div class="driver-tile" data-driver="Diminished Imagination">
+          <div class="driver-tile-check"></div>
+          <div class="driver-tile-name">Diminished Imagination</div>
+          <div class="driver-tile-blurb">Fatigue narrows what seems possible</div>
+        </div>
+
+        <div class="driver-tile" data-driver="AI & Digital">
+          <div class="driver-tile-check"></div>
+          <div class="driver-tile-name">AI & Digital</div>
+          <div class="driver-tile-blurb">Technology reshapes what's thinkable</div>
+        </div>
+
+        <div class="driver-tile" data-driver="Precarious Ambivalence">
+          <div class="driver-tile-check"></div>
+          <div class="driver-tile-name">Precarious Ambivalence</div>
+          <div class="driver-tile-blurb">Competing loyalties held at the limit</div>
+        </div>
+
+        <div class="driver-tile" data-driver="Constraining Instability">
+          <div class="driver-tile-check"></div>
+          <div class="driver-tile-name">Constraining Instability</div>
+          <div class="driver-tile-blurb">Pressure reduces the margin for change</div>
+        </div>
+
+      </div>
+
+      <div class="attend-response">
+        <label class="attend-response-label" for="r-reframe">Go deeper on one</label>
+        <textarea
+          id="r-reframe"
+          class="attend-textarea"
+          data-key="reframe"
+          placeholder="Which driver feels most present in your context right now — and what does it actually look like, concretely, in your community or organization?"
+          rows="4"
+        ></textarea>
+        <span class="attend-save-hint" id="hint-reframe">auto-saved</span>
+      </div>
+
+      <div style="margin-top: 1.75rem;">
+        <a href="foi-resources.html" class="resource-callout">
+          <div class="resource-callout-inner">
+            <span class="resource-callout-label">Resource Space</span>
+            <span class="resource-callout-name">Read deeper on each of the five compound drivers</span>
+          </div>
+          <span class="resource-callout-arrow">→</span>
+        </a>
+      </div>
+
+    </section>
+
+    <!-- ===================== -->
+    <!-- STEP 4 — APPLY        -->
+    <!-- ===================== -->
+    <section class="attend-step" id="step-apply" data-step="4">
+
+      <div class="step-badge">
+        <span class="step-num-pill">04</span>
+        <span class="step-name-pill">Apply</span>
+      </div>
+
+      <h2 class="step-heading">Now look directly at your own context.</h2>
+      <p class="step-intro">Three prompts. Write honestly. The goal isn't completeness — it's naming what's actually there.</p>
+
+      <div class="signal-inputs">
+
+        <div class="signal-input-item signal-unnamed">
+          <span class="signal-input-type">Unnamed signal</span>
+          <p class="signal-input-prompt">A signal I've been noticing but haven't yet said out loud to anyone is...</p>
+          <textarea
+            class="attend-textarea"
+            data-key="signal_1"
+            placeholder="Write it simply. You don't need to explain what it means yet."
+            rows="3"
+          ></textarea>
+        </div>
+
+        <div class="signal-input-item signal-strain">
+          <span class="signal-input-type">Pressure or strain</span>
+          <p class="signal-input-prompt">Something that feels strained, fragile, or quietly breaking down in my context is...</p>
+          <textarea
+            class="attend-textarea"
+            data-key="signal_2"
+            placeholder="Don't soften it. Be specific."
+            rows="3"
+          ></textarea>
+        </div>
+
+        <div class="signal-input-item signal-gen">
+          <span class="signal-input-type">Generative or emerging</span>
+          <p class="signal-input-prompt">Something that feels newly possible, generative, or worth paying attention to is...</p>
+          <textarea
+            class="attend-textarea"
+            data-key="signal_3"
+            placeholder="Even if it's early or uncertain — name it."
+            rows="3"
+          ></textarea>
+        </div>
+
+      </div>
+
+      <!-- Disruption -->
+      <div class="disruption-block">
+        <span class="disruption-tag">Challenge</span>
+        <h3 class="disruption-title">What You're Not Looking At</h3>
+        <p class="disruption-framing">The things we avoid attending to rarely go away. They tend to shape us more than the things we face directly.</p>
+        <p class="disruption-prompt">"Name one signal in your context — something you are aware of, but have been consistently not looking at directly. Why have you been avoiding it? What would it cost you to look?"</p>
+      </div>
+
+      <!-- Micro-practice -->
+      <div class="msection" style="margin-top: 1.5rem;">
+        <span class="section-label">Micro-Practice — The Slow Look</span>
+        <p>At the end of each day this week, take five minutes to write one thing you noticed about your ministry context that surprised you, troubled you, or stayed with you. Don't explain it. Don't fix it. Just name it.</p>
+        <div class="micro-aside" style="margin-top: 1.25rem;">
+          <div class="micro-aside-item">
+            <span class="micro-aside-label">Why it matters</span>
+            <p>Attention is a practice before it is a skill. Noticing requires a deliberate slowing that most ministry environments don't naturally create.</p>
+          </div>
+          <div class="micro-aside-item">
+            <span class="micro-aside-label">Group version</span>
+            <p>Begin your next team meeting with two minutes of silence, then ask each person to name one thing they've been noticing that they haven't said aloud yet. Listen without responding.</p>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="artifact-block artifact-tension">
-      <span class="artifact-type-label">Tension</span>
-      <h3 class="artifact-title">Who Gets to Name the Signal?</h3>
-      <p>Innovation in any context depends on whose perception is treated as reliable information. In most organizations, the people closest to the edges of ministry — the newest staff member, the lay leader in the most under-resourced community, the person who almost left last year — are often holding the most important signals.</p>
-      <p>They may not be in the room when decisions are made. Or they may be in the room but not asked. Attending faithfully is not just about your own perception. It is about building the conditions under which the right signals can reach the right people.</p>
-    </div>
+    </section>
 
-    <div class="msection">
-      <span class="section-label">Notice</span>
-      <p><em>What are you noticing about what you notice? Have any of the five drivers surprised you by how present they are? What has been harder to attend to than you expected — and what does that resistance tell you about your organization's relationship with innovation?</em></p>
-    </div>
+    <!-- ===================== -->
+    <!-- STEP 5 — INTEGRATE    -->
+    <!-- ===================== -->
+    <section class="attend-step" id="step-integrate" data-step="5">
 
-    <div class="threshold-section">
-      <div class="threshold-prompt">
-        <span class="threshold-label">Carry Forward</span>
-        <p class="threshold-text">One thing I'm noticing that I haven't yet said out loud to anyone is...</p>
+      <div class="step-badge">
+        <span class="step-num-pill">05</span>
+        <span class="step-name-pill">Integrate</span>
       </div>
-      <div class="threshold-prompt">
-        <span class="threshold-label">Return to This</span>
-        <p class="threshold-text">You named something you were noticing. Come back to it now: Has it shifted? Has it surfaced somewhere else? What does it look like to you a week or a month later?</p>
-      </div>
-    </div>
 
-    <nav class="page-nav">
-      <a href="futures-innovation.html">
-        <span class="nav-label">← Return to</span>
-        <span class="nav-name">The Circle</span>
-      </a>
-      <a href="interpret.html" class="nav-right">
-        <span class="nav-label">Next Movement →</span>
-        <span class="nav-name">Interpret</span>
-      </a>
-    </nav>
+      <h2 class="step-heading">What are you carrying forward?</h2>
+      <p class="step-intro">Your attention signal — built from what you've named. Add your synthesis below to complete it, then carry it into Interpret.</p>
+
+      <!-- Live carry card -->
+      <div class="carry-card">
+        <div class="carry-card-header">
+          <span class="carry-card-title">Attention Signal — Futures of Innovation</span>
+          <span class="carry-card-date" id="carryDate"></span>
+        </div>
+        <div class="carry-card-body">
+
+          <div class="carry-card-section">
+            <div class="carry-card-section-label">Forces I recognize in my context</div>
+            <div class="carry-card-drivers" id="carry-drivers">
+              <span class="carry-empty">Select forces in Reframe above</span>
+            </div>
+          </div>
+
+          <div class="carry-card-section">
+            <div class="carry-card-section-label">Signal I haven't named yet</div>
+            <div class="carry-card-text empty" id="carry-signal">—</div>
+          </div>
+
+          <div class="carry-card-section">
+            <div class="carry-card-section-label">What I'm most attending to</div>
+            <div class="carry-card-text empty" id="carry-synthesis">Write your synthesis below...</div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Synthesis textarea feeds carry card -->
+      <div class="attend-response">
+        <label class="attend-response-label" for="r-synthesis">Your synthesis</label>
+        <textarea
+          id="r-synthesis"
+          class="attend-textarea"
+          data-key="synthesis"
+          placeholder="The most important thing I'm attending to right now is..."
+          rows="3"
+        ></textarea>
+        <span class="attend-save-hint" id="hint-synthesis">auto-saved</span>
+      </div>
+
+      <!-- Tension artifact -->
+      <div class="artifact-block artifact-tension" style="margin-top: 2rem;">
+        <span class="artifact-type-label">Tension</span>
+        <h3 class="artifact-title">Who Gets to Name the Signal?</h3>
+        <p>In most organizations, the people closest to the edges of ministry — the newest staff member, the lay leader in the most under-resourced community, the person who almost left last year — are often holding the most important signals. They may not be in the room when decisions are made. Or they may be in the room but not asked.</p>
+        <p>Attending faithfully is not just about your own perception. It is about building the conditions under which the right signals can reach the right people.</p>
+      </div>
+
+      <!-- Group practice (collapsible) -->
+      <div class="group-toggle" id="groupPracticeToggle">
+        <div class="group-toggle-header" id="groupPracticeBtn">
+          <span class="group-toggle-label">For teams and leadership groups — Signal Mapping Together</span>
+          <span class="group-toggle-chevron">+</span>
+        </div>
+        <div class="group-toggle-body">
+          <ol class="group-practice-steps">
+            <li>Before the meeting, invite each person to come prepared with one signal they've been noticing — something that feels important but hasn't been named yet in the group.</li>
+            <li>Go around the table. Each person names their signal in one sentence. No explanation yet. No response from others.</li>
+            <li>After everyone has shared, invite the group to name what they notice about what was named: Where are the patterns? What is notably absent?</li>
+            <li>Ask together: What are we attending to well as a leadership team — and what are we systematically not seeing?</li>
+            <li>Close by identifying one area of shared attention you want to cultivate over the next month.</li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- Threshold prompts -->
+      <div class="threshold-section">
+        <div class="threshold-prompt">
+          <span class="threshold-label">Carry Forward</span>
+          <p class="threshold-text">One thing I'm noticing that I haven't yet said out loud to anyone is...</p>
+        </div>
+        <div class="threshold-prompt">
+          <span class="threshold-label">Return to This</span>
+          <p class="threshold-text">You named something you were noticing. Come back to it now: Has it shifted? Has it surfaced somewhere else? What does it look like a week or a month later?</p>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="integrate-actions">
+        <a href="interpret.html" class="btn-move-forward">
+          <div class="btn-move-forward-label">
+            <div class="btn-move-forward-next">Next Movement</div>
+            <div class="btn-move-forward-name">Interpret →</div>
+          </div>
+          <span class="btn-forward-arrow">→</span>
+        </a>
+        <p class="integrate-note">You can return to this page at any time — your responses are saved in this browser.</p>
+      </div>
+
+    </section>
 
   </main>
 
@@ -189,12 +430,123 @@
   </footer>
 
   <script>
-    document.querySelectorAll('.locate-option').forEach(function(option) {
-      option.addEventListener('click', function() {
-        var isActive = this.classList.contains('active');
-        document.querySelectorAll('.locate-option').forEach(function(o) { o.classList.remove('active'); });
-        if (!isActive) this.classList.add('active');
+    // ── Progress tracker (scroll-based) ──────────────────────────────
+    const stepSections   = document.querySelectorAll('.attend-step[data-step]');
+    const progressItems  = document.querySelectorAll('.progress-step-item[data-for-step]');
+    const progressOffset = 120; // px from top to consider "entering"
+
+    function updateProgress() {
+      const scrollTop = window.scrollY + window.innerHeight * 0.38;
+      let activeStep = 1;
+      stepSections.forEach(function(section) {
+        if (section.offsetTop <= scrollTop) {
+          activeStep = parseInt(section.dataset.step);
+        }
       });
+      progressItems.forEach(function(item) {
+        const n = parseInt(item.dataset.forStep);
+        item.classList.remove('active', 'visited');
+        if (n < activeStep)  item.classList.add('visited');
+        if (n === activeStep) item.classList.add('active');
+      });
+    }
+
+    window.addEventListener('scroll', updateProgress, { passive: true });
+    updateProgress();
+
+    // ── Locate Yourself accordion ─────────────────────────────────────
+    var savedLocate = localStorage.getItem('attend_locate_selection');
+    document.querySelectorAll('.locate-option').forEach(function(opt) {
+      if (savedLocate && opt.dataset.optionKey === savedLocate) {
+        opt.classList.add('active');
+      }
+      opt.querySelector('.locate-option-header').addEventListener('click', function() {
+        var parent = this.closest('.locate-option');
+        var isActive = parent.classList.contains('active');
+        document.querySelectorAll('.locate-option').forEach(function(o) { o.classList.remove('active'); });
+        if (!isActive) {
+          parent.classList.add('active');
+          localStorage.setItem('attend_locate_selection', parent.dataset.optionKey);
+        } else {
+          localStorage.removeItem('attend_locate_selection');
+        }
+      });
+    });
+
+    // ── Driver tile selection ─────────────────────────────────────────
+    var savedDrivers = JSON.parse(localStorage.getItem('attend_drivers') || '[]');
+    document.querySelectorAll('.driver-tile').forEach(function(tile) {
+      if (savedDrivers.indexOf(tile.dataset.driver) !== -1) {
+        tile.classList.add('selected');
+      }
+      tile.addEventListener('click', function() {
+        this.classList.toggle('selected');
+        var selected = [];
+        document.querySelectorAll('.driver-tile.selected').forEach(function(t) {
+          selected.push(t.dataset.driver);
+        });
+        localStorage.setItem('attend_drivers', JSON.stringify(selected));
+        updateCarryCard();
+      });
+    });
+
+    // ── Textarea auto-save ────────────────────────────────────────────
+    document.querySelectorAll('textarea[data-key]').forEach(function(ta) {
+      var key  = 'attend_' + ta.dataset.key;
+      var hint = document.getElementById('hint-' + ta.dataset.key);
+      var saved = localStorage.getItem(key);
+      if (saved) ta.value = saved;
+
+      ta.addEventListener('input', function() {
+        localStorage.setItem(key, this.value);
+        if (hint) {
+          hint.classList.add('active');
+          clearTimeout(hint._t);
+          hint._t = setTimeout(function() { hint.classList.remove('active'); }, 1200);
+        }
+        updateCarryCard();
+      });
+    });
+
+    // ── Carry card live update ────────────────────────────────────────
+    function updateCarryCard() {
+      // Drivers
+      var driverEls = document.querySelectorAll('.driver-tile.selected');
+      var driversContainer = document.getElementById('carry-drivers');
+      if (driverEls.length) {
+        var html = '';
+        driverEls.forEach(function(t) {
+          html += '<span class="carry-driver-tag">' + t.dataset.driver + '</span>';
+        });
+        driversContainer.innerHTML = html;
+      } else {
+        driversContainer.innerHTML = '<span class="carry-empty">Select forces in Reframe above</span>';
+      }
+
+      // Signal 1
+      var signalEl  = document.getElementById('carry-signal');
+      var signalVal = (localStorage.getItem('attend_signal_1') || '').trim();
+      signalEl.textContent = signalVal || '—';
+      signalEl.classList.toggle('empty', !signalVal);
+
+      // Synthesis
+      var synthEl  = document.getElementById('carry-synthesis');
+      var synthVal = (localStorage.getItem('attend_synthesis') || '').trim();
+      synthEl.textContent = synthVal || 'Write your synthesis below...';
+      synthEl.classList.toggle('empty', !synthVal);
+    }
+
+    // Date in carry card header
+    document.getElementById('carryDate').textContent = new Date().toLocaleDateString('en-CA', {
+      year: 'numeric', month: 'short', day: 'numeric'
+    });
+
+    // Initial carry card render (from saved state)
+    updateCarryCard();
+
+    // ── Group practice toggle ─────────────────────────────────────────
+    document.getElementById('groupPracticeBtn').addEventListener('click', function() {
+      document.getElementById('groupPracticeToggle').classList.toggle('open');
     });
   </script>
 
