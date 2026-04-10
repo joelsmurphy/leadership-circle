@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discern — Age of Instability</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Spectral:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a href="index.html" class="site-title">Leadership Circles</a>
+      <nav class="site-nav">
+        <a href="age-of-instability.html" class="nav-back">← Age of Instability</a>
+        <a href="aoi-attend.html">Attend</a>
+        <a href="aoi-interpret.html">Interpret</a>
+        <a href="aoi-discern.html" class="active">Discern</a>
+        <a href="aoi-imagine.html">Imagine</a>
+        <a href="aoi-name-readiness.html">Name Readiness</a>
+        <a href="aoi-learn.html">Learn</a>
+        <a href="aoi-next-steps.html">Next Steps</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="movement-hero">
+    <div class="movement-hero-inner">
+      <span class="hero-big-num" aria-hidden="true">03</span>
+      <span class="movement-num-label fade-in">Movement 03 — Age of Instability</span>
+      <h1 class="fade-in-2">Discern</h1>
+      <p class="movement-tagline fade-in-3">Listening for faithful direction when instability becomes the decision-making context</p>
+    </div>
+  </section>
+
+  <!-- PROGRESS TRACKER -->
+  <div class="attend-progress" id="discernProgress" aria-label="Step progress">
+    <div class="attend-progress-inner">
+      <div class="progress-step-item active" data-for-step="1">
+        <span class="progress-step-num">01</span>
+        <span class="progress-step-label">Encounter</span>
+      </div>
+      <div class="progress-line"></div>
+      <div class="progress-step-item" data-for-step="2">
+        <span class="progress-step-num">02</span>
+        <span class="progress-step-label">Surface</span>
+      </div>
+      <div class="progress-line"></div>
+      <div class="progress-step-item" data-for-step="3">
+        <span class="progress-step-num">03</span>
+        <span class="progress-step-label">Reframe</span>
+      </div>
+      <div class="progress-line"></div>
+      <div class="progress-step-item" data-for-step="4">
+        <span class="progress-step-num">04</span>
+        <span class="progress-step-label">Apply</span>
+      </div>
+      <div class="progress-line"></div>
+      <div class="progress-step-item" data-for-step="5">
+        <span class="progress-step-num">05</span>
+        <span class="progress-step-label">Integrate</span>
+      </div>
+    </div>
+  </div>
+
+  <main class="attend-steps">
+
+    <p class="attend-save-notice">Your responses are saved automatically in this browser</p>
+
+    <!-- ======================== -->
+    <!-- STEP 1 — ENCOUNTER       -->
+    <!-- ======================== -->
+    <section class="attend-step" id="step-encounter" data-step="1">
+
+      <div class="step-badge">
+        <span class="step-num-pill">01</span>
+        <span class="step-name-pill">Encounter</span>
+      </div>
+
+      <h2 class="step-heading">The decision was made in fear.<br>Everyone knew it. No one said it.</h2>
+      <p class="step-intro">Read this slowly. Notice what instinct it activates — and what it asks of you.</p>
+
+      <div class="encounter-card">
+        <span class="encounter-card-label">Scenario — Board Meeting, Early 2026</span>
+        <p>The denomination had just announced restructuring — fewer staff, merged regional offices, a new emphasis on congregational self-sufficiency. The church's board was meeting to decide whether to cut the part-time associate pastor position. The lead pastor sat quietly as three board members made the financial case. The numbers were real. The anxiety was realer.</p>
+        <p>What nobody said out loud: the associate pastor had been the primary person doing ministry with the younger families who had recently started attending. Her work was the only thread connecting the congregation to the neighbourhood's most recent arrivals — people who were themselves navigating economic precarity, language barriers, and housing instability.</p>
+        <p>The board voted to eliminate the position. It was a reasonable financial decision made under genuine pressure. Two months later, the young families stopped coming. The board had discerned the budget. They had not discerned the community.</p>
+        <p><em>In seasons of instability, reactive management can do the work that discernment is supposed to do. The difference is often invisible in the moment — and only clear in the aftermath.</em></p>
+      </div>
+
+      <div class="attend-response">
+        <label class="attend-response-label" for="r-encounter">Your first response</label>
+        <textarea
+          id="r-encounter"
+          class="attend-textarea"
+          data-key="encounter"
+          placeholder="What do you notice? Where do you recognize this pattern in your own context or leadership?"
+          rows="4"
+        ></textarea>
+        <span class="attend-save-hint" id="hint-encounter">auto-saved</span>
+      </div>
+
+    </section>
+
+    <!-- ======================== -->
+    <!-- STEP 2 — SURFACE         -->
+    <!-- ======================== -->
+    <section class="attend-step" id="step-surface" data-step="2">
+
+      <div class="step-badge">
+        <span class="step-num-pill">02</span>
+        <span class="step-name-pill">Surface</span>
+      </div>
+
+      <h2 class="step-heading">What is actually driving the decisions you're making under pressure?</h2>
+      <p class="step-intro">Three layers. Instability compresses time and narrows the field of discernment. The goal here is to name what is actually operating — beneath the urgency.</p>
+
+      <!-- Layer A: The pressure (always shown) -->
+      <div class="surface-section always-shown" id="surfaceA">
+        <div class="surface-section-label">Layer A</div>
+        <h3 class="surface-section-heading">The Pressure Driving Your Decisions</h3>
+        <p class="surface-section-hint">Think of a real decision your community is currently facing — or one it has recently made. What instability pressure is shaping the pace and framing of that decision?</p>
+
+        <div class="attend-response">
+          <label class="attend-response-label" for="r-pressure">What force of instability is most directly driving the decision you're working with?</label>
+          <textarea
+            id="r-pressure"
+            class="attend-textarea"
+            data-key="surface_pressure"
+            placeholder="Financial pressure, denominational change, community loss, staff capacity, demographic shift, something else..."
+            rows="3"
+          ></textarea>
+          <span class="attend-save-hint" id="hint-surface_pressure">auto-saved</span>
+        </div>
+
+        <button class="reveal-btn" id="revealB">Continue to Layer B</button>
+      </div>
+
+      <hr class="surface-divider" id="dividerAB" style="display:none;">
+
+      <!-- Layer B: Fear vs faith -->
+      <div class="surface-section" id="surfaceB">
+        <div class="surface-section-label">Layer B</div>
+        <h3 class="surface-section-heading">Fear or Faith?</h3>
+        <p class="surface-section-hint">Reactive decisions made under instability are not always wrong — but they are often made with fear doing the work that faith is supposed to do. Name the fear that is most shaping your community's current posture toward decisions.</p>
+
+        <div class="attend-response">
+          <label class="attend-response-label" for="r-fear">What fear is most active in your community's decision-making right now?</label>
+          <textarea
+            id="r-fear"
+            class="attend-textarea"
+            data-key="surface_fear"
+            placeholder="Fear of loss, irrelevance, conflict, financial collapse, demographic decline, missing an opportunity — what is most alive?"
+            rows="3"
+          ></textarea>
+          <span class="attend-save-hint" id="hint-surface_fear">auto-saved</span>
+        </div>
+
+        <button class="reveal-btn" id="revealC">Continue to Layer C</button>
+      </div>
+
+      <hr class="surface-divider" id="dividerBC" style="display:none;">
+
+      <!-- Layer C: What's being skipped -->
+      <div class="surface-section" id="surfaceC">
+        <div class="surface-section-label">Layer C</div>
+        <h3 class="surface-section-heading">What the Discernment Is Skipping</h3>
+        <p class="surface-section-hint">In the scenario, the board discerned the budget but not the community. When decisions are made under instability, what step of discernment tends to get compressed or skipped in your context?</p>
+
+        <div class="attend-response">
+          <label class="attend-response-label" for="r-skipped">What is consistently missing from how your community makes decisions under pressure?</label>
+          <textarea
+            id="r-skipped"
+            class="attend-textarea"
+            data-key="surface_skipped"
+            placeholder="The voices not consulted, the questions not asked, the time not taken, the theological frame not applied..."
+            rows="3"
+          ></textarea>
+          <span class="attend-save-hint" id="hint-surface_skipped">auto-saved</span>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ======================== -->
+    <!-- STEP 3 — REFRAME         -->
+    <!-- ======================== -->
+    <section class="attend-step" id="step-reframe" data-step="3">
+
+      <div class="step-badge">
+        <span class="step-num-pill">03</span>
+        <span class="step-name-pill">Reframe</span>
+      </div>
+
+      <h2 class="step-heading">Six questions that discernment in instability asks.</h2>
+      <p class="step-intro">These aren't sequential. They are different angles on a decision being made in an unstable context. Select the ones that feel most necessary — or most uncomfortable — for your current situation.</p>
+
+      <div class="discern-q-grid">
+
+        <div class="discern-q-tile" data-q="margin">
+          <div class="discern-q-num">01</div>
+          <div class="discern-q-text">Who is being squeezed out of this decision by the instability — and what would they say if we found a way to include them?</div>
+        </div>
+
+        <div class="discern-q-tile" data-q="fear-work">
+          <div class="discern-q-num">02</div>
+          <div class="discern-q-text">What fear is doing the work that discernment should be doing here — and are we willing to name it out loud?</div>
+        </div>
+
+        <div class="discern-q-tile" data-q="what-lost">
+          <div class="discern-q-num">03</div>
+          <div class="discern-q-text">What community relationship or ministry capacity might this decision quietly eliminate — and have we honestly named what that loss would mean?</div>
+        </div>
+
+        <div class="discern-q-tile" data-q="forming">
+          <div class="discern-q-num">04</div>
+          <div class="discern-q-text">What kind of community is this decision forming us to be — not in intention, but in effect?</div>
+        </div>
+
+        <div class="discern-q-tile" data-q="prophetic">
+          <div class="discern-q-num">05</div>
+          <div class="discern-q-text">What would prophetic faithfulness require here — not the safest path, but the one that takes the gospel seriously in this specific moment?</div>
+        </div>
+
+        <div class="discern-q-tile" data-q="spirit">
+          <div class="discern-q-num">06</div>
+          <div class="discern-q-text">Where is there evidence of the Spirit's movement in this instability — and where is there a form of resistance that might itself be guidance?</div>
+        </div>
+
+      </div>
+
+      <div class="attend-response" style="margin-top: 1.75rem;">
+        <label class="attend-response-label" for="r-reframe">Go deeper on one</label>
+        <textarea
+          id="r-reframe"
+          class="attend-textarea"
+          data-key="reframe_question"
+          placeholder="Which question cuts closest to what your community is actually navigating right now? Write into it."
+          rows="4"
+        ></textarea>
+        <span class="attend-save-hint" id="hint-reframe_question">auto-saved</span>
+      </div>
+
+    </section>
+
+    <!-- ======================== -->
+    <!-- STEP 4 — APPLY           -->
+    <!-- ======================== -->
+    <section class="attend-step" id="step-apply" data-step="4">
+
+      <div class="step-badge">
+        <span class="step-num-pill">04</span>
+        <span class="step-name-pill">Apply</span>
+      </div>
+
+      <h2 class="step-heading">Work the discernment on your actual situation.</h2>
+      <p class="step-intro">Three prompts, structured to move from the surface pressure to the deeper stakes to the faithful path. This is not a formula — it is a slowing down inside the instability.</p>
+
+      <div class="discern-triad">
+
+        <div class="discern-triad-item">
+          <div class="discern-triad-header">
+            <div class="discern-triad-marker">A</div>
+            <span>What is actually threatened?</span>
+          </div>
+          <p class="discern-triad-prompt">Beneath the budget line, the staffing decision, the program cut — what is the deeper thing being threatened? Community relationships? A ministry to the margin? A way of being church? Name it precisely.</p>
+          <textarea
+            class="attend-textarea"
+            data-key="apply_threatened"
+            placeholder="The deeper thing being threatened by this decision is..."
+            rows="4"
+          ></textarea>
+        </div>
+
+        <div class="discern-triad-item">
+          <div class="discern-triad-header">
+            <div class="discern-triad-marker">B</div>
+            <span>What must be honored?</span>
+          </div>
+          <p class="discern-triad-prompt">What relationships, commitments, or theological convictions must be honored even in this season of pressure — regardless of which direction the decision goes? What would it mean to betray one of them?</p>
+          <textarea
+            class="attend-textarea"
+            data-key="apply_honor"
+            placeholder="Whatever this decision concludes, it must honor..."
+            rows="4"
+          ></textarea>
+        </div>
+
+        <div class="discern-triad-item">
+          <div class="discern-triad-header">
+            <div class="discern-triad-marker">C</div>
+            <span>What would prophetic faithfulness require?</span>
+          </div>
+          <p class="discern-triad-prompt">Not the safest path. Not the most heroic one. The one that honest faithfulness actually points toward in this specific moment of instability — even if it costs something significant. What would it take to follow it?</p>
+          <textarea
+            class="attend-textarea"
+            data-key="apply_courage"
+            placeholder="Prophetic faithfulness in this situation would look like..."
+            rows="4"
+          ></textarea>
+        </div>
+
+      </div>
+
+      <!-- Disruption -->
+      <div class="disruption-block">
+        <span class="disruption-tag">Challenge</span>
+        <h3 class="disruption-title">The Discernment Instability Steals</h3>
+        <p class="disruption-framing">One of the most underacknowledged costs of instability is what it does to the conditions for discernment. When communities are under sustained pressure, discernment gets compressed into management. Leaders who slow down in a crisis can feel like they are failing. The expectation of decisive action is often inversely proportional to the time available for genuinely faithful decision-making.</p>
+        <p class="disruption-prompt">"Name a decision your community has made in the last two years where instability — financial pressure, staff loss, demographic change — compressed the discernment process. What was skipped? What would it have looked like to have discerned it more faithfully? What stopped that from happening?"</p>
+      </div>
+
+      <!-- Micro-practice -->
+      <div class="msection" style="margin-top: 1.5rem;">
+        <span class="section-label">Micro-Practice — The Instability Pause</span>
+        <p>Before your next significant decision under pressure, take ten minutes to write three things: <em>What is the actual fear driving the urgency? Who is not in this conversation? What would we do if we weren't afraid?</em> These three questions, answered honestly, often change what happens next more than any strategic process.</p>
+        <div class="micro-aside" style="margin-top: 1.25rem;">
+          <div class="micro-aside-item">
+            <span class="micro-aside-label">Why it matters</span>
+            <p>The board in the scenario didn't lack good intentions. They lacked the conditions for discernment — and nobody stopped to name that the conditions were wrong. Creating a deliberate pause is a leadership act, not a weakness.</p>
+          </div>
+          <div class="micro-aside-item">
+            <span class="micro-aside-label">Group version</span>
+            <p>Before a team makes a significant decision in a season of pressure, name out loud: "We are making this decision under instability conditions. What are we at risk of skipping?" Let the naming of the risk slow the room down enough to actually check.</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ======================== -->
+    <!-- STEP 5 — INTEGRATE       -->
+    <!-- ======================== -->
+    <section class="attend-step" id="step-integrate" data-step="5">
+
+      <div class="step-badge">
+        <span class="step-num-pill">05</span>
+        <span class="step-name-pill">Integrate</span>
+      </div>
+
+      <h2 class="step-heading">Name your discernment posture in instability.</h2>
+      <p class="step-intro">Discernment in unstable conditions doesn't always produce decisions. It produces a posture — a way of standing toward the questions that will shape how you act. Name what this movement has clarified, questioned, and left unresolved.</p>
+
+      <div class="posture-card">
+        <div class="posture-card-header">
+          <span>Discernment Posture — Age of Instability</span>
+          <span class="carry-card-date" id="postureDate"></span>
+        </div>
+        <div class="posture-card-body">
+
+          <div class="posture-card-field">
+            <span class="posture-field-label affirm">What has been affirmed</span>
+            <p class="posture-field-hint">What conviction about faithful leadership in instability has this movement strengthened for you?</p>
+            <textarea
+              class="attend-textarea posture-fill"
+              data-key="posture_affirmed"
+              placeholder="Something I'm now more sure of — about leading faithfully in instability — is..."
+              rows="3"
+            ></textarea>
+          </div>
+
+          <div class="posture-card-field">
+            <span class="posture-field-label question">What has been questioned</span>
+            <p class="posture-field-hint">What assumption about how decisions should be made — or who should make them — has this movement called into question?</p>
+            <textarea
+              class="attend-textarea posture-fill"
+              data-key="posture_questioned"
+              placeholder="Something I'm now less certain of — about my leadership or my community's discernment — is..."
+              rows="3"
+            ></textarea>
+          </div>
+
+          <div class="posture-card-field">
+            <span class="posture-field-label unresolved">What remains unresolved</span>
+            <p class="posture-field-hint">What question or tension are you carrying forward — not as a failure of discernment, but as its honest and necessary output in a season of genuine instability?</p>
+            <textarea
+              class="attend-textarea posture-fill"
+              data-key="posture_unresolved"
+              placeholder="Something I'm carrying into Imagine without resolution is..."
+              rows="3"
+            ></textarea>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Tension -->
+      <div class="artifact-block artifact-tension" style="margin-top: 2rem;">
+        <span class="artifact-type-label">Tension</span>
+        <h3 class="artifact-title">Discernment and Prophetic Faithfulness</h3>
+        <p>The tradition of prophetic leadership in Scripture is not a tradition of decisiveness under pressure. It is a tradition of uncomfortable fidelity — of leaders who said things that couldn't be managed, who named what others were avoiding, who oriented the community not toward safety but toward faithfulness. Prophetic leadership in instability is not loud or dramatic. It is the quiet insistence on asking the question that fear is trying to prevent from being asked.</p>
+        <p>The question is not whether your community has the capacity for prophetic discernment. It is whether the conditions for that kind of discernment are being protected — or being quietly eliminated by the same instability you're trying to navigate.</p>
+      </div>
+
+      <!-- Group practice -->
+      <div class="group-toggle" id="groupPracticeToggle">
+        <div class="group-toggle-header" id="groupPracticeBtn">
+          <span class="group-toggle-label">For teams and leadership groups — Discernment Under Pressure</span>
+          <span class="group-toggle-chevron">+</span>
+        </div>
+        <div class="group-toggle-body">
+          <ol class="group-practice-steps">
+            <li>Before a significant decision, name explicitly: "We are making this under instability conditions. What are the conditions for discernment that we might be tempted to skip?" Let the group respond honestly.</li>
+            <li>Invite one person to play the role of community advocate: their job is to speak for those who are not in the room — especially those most affected by the instability — and name what they might say about this decision.</li>
+            <li>Use the triad as a group: What is actually threatened? What must be honored? What would prophetic faithfulness require?</li>
+            <li>Name the fear that is most active in the room. Give it a name. Ask: Is this fear giving us accurate information, or is it narrowing our field of vision?</li>
+            <li>Close with a shared discernment posture statement — not a decision, but a commitment to how the decision will be made: what voices will be included, what questions will be held open, what will not be sacrificed for the sake of urgency.</li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- Threshold -->
+      <div class="threshold-section">
+        <div class="threshold-prompt">
+          <span class="threshold-label">Carry Forward</span>
+          <p class="threshold-text">The question I'm carrying into Imagine — not resolved, but no longer avoided — is...</p>
+        </div>
+        <div class="threshold-prompt">
+          <span class="threshold-label">Return to This</span>
+          <p class="threshold-text">Come back after a real decision made under pressure. What did the discernment actually look like? What did you protect — and what did you let get compressed?</p>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="integrate-actions">
+        <a href="aoi-imagine.html" class="btn-move-forward">
+          <div class="btn-move-forward-label">
+            <div class="btn-move-forward-next">Next Movement</div>
+            <div class="btn-move-forward-name">Imagine →</div>
+          </div>
+          <span class="btn-forward-arrow">→</span>
+        </a>
+        <p class="integrate-note">You can return to this page at any time — your responses are saved in this browser.</p>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>A formation resource from the Futuring Hub — MacRae Centre for Christian Faith and Culture, Acadia Divinity College</p>
+  </footer>
+
+  <script>
+    var LS = 'aoi_discern_';
+    function save(key, val) { localStorage.setItem(LS + key, val); }
+    function load(key) { return localStorage.getItem(LS + key) || ''; }
+
+    // ── Progress tracker ──────────────────────────────────────────────
+    var stepSections  = document.querySelectorAll('.attend-step[data-step]');
+    var progressItems = document.querySelectorAll('.progress-step-item[data-for-step]');
+
+    function updateProgress() {
+      var scrollTop = window.scrollY + window.innerHeight * 0.38;
+      var activeStep = 1;
+      stepSections.forEach(function(section) {
+        if (section.offsetTop <= scrollTop) activeStep = parseInt(section.dataset.step);
+      });
+      progressItems.forEach(function(item) {
+        var n = parseInt(item.dataset.forStep);
+        item.classList.remove('active', 'visited');
+        if (n < activeStep)  item.classList.add('visited');
+        if (n === activeStep) item.classList.add('active');
+      });
+    }
+    window.addEventListener('scroll', updateProgress, { passive: true });
+    updateProgress();
+
+    // ── Textarea auto-save ────────────────────────────────────────────
+    document.querySelectorAll('textarea[data-key]').forEach(function(ta) {
+      var key  = LS + ta.dataset.key;
+      var hint = document.getElementById('hint-' + ta.dataset.key);
+      var saved = localStorage.getItem(key);
+      if (saved) ta.value = saved;
+
+      ta.addEventListener('input', function() {
+        localStorage.setItem(key, this.value);
+        if (hint) {
+          hint.classList.add('active');
+          clearTimeout(hint._t);
+          hint._t = setTimeout(function() { hint.classList.remove('active'); }, 1200);
+        }
+      });
+    });
+
+    // ── Discernment question tiles ────────────────────────────────────
+    var savedQs = JSON.parse(localStorage.getItem(LS + 'q_selected') || '[]');
+    document.querySelectorAll('.discern-q-tile').forEach(function(tile) {
+      if (savedQs.indexOf(tile.dataset.q) !== -1) tile.classList.add('selected');
+      tile.addEventListener('click', function() {
+        this.classList.toggle('selected');
+        var selected = [];
+        document.querySelectorAll('.discern-q-tile.selected').forEach(function(t) { selected.push(t.dataset.q); });
+        localStorage.setItem(LS + 'q_selected', JSON.stringify(selected));
+      });
+    });
+
+    // ── Progressive surface reveal ────────────────────────────────────
+    function revealSection(sectionId, dividerId) {
+      var sec = document.getElementById(sectionId);
+      var div = document.getElementById(dividerId);
+      if (sec) sec.classList.add('revealed');
+      if (div) div.style.display = '';
+      save('revealed_' + sectionId, '1');
+      if (sec) setTimeout(function() { sec.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 80);
+    }
+
+    if (load('revealed_surfaceB') === '1') revealSection('surfaceB', 'dividerAB');
+    if (load('revealed_surfaceC') === '1') revealSection('surfaceC', 'dividerBC');
+
+    var btnB = document.getElementById('revealB');
+    var btnC = document.getElementById('revealC');
+    if (btnB) btnB.addEventListener('click', function() { revealSection('surfaceB', 'dividerAB'); });
+    if (btnC) btnC.addEventListener('click', function() { revealSection('surfaceC', 'dividerBC'); });
+
+    // ── Date ──────────────────────────────────────────────────────────
+    var pd = document.getElementById('postureDate');
+    if (pd) pd.textContent = new Date().toLocaleDateString('en-CA', { year: 'numeric', month: 'short', day: 'numeric' });
+
+    // ── Group practice toggle ─────────────────────────────────────────
+    document.getElementById('groupPracticeBtn').addEventListener('click', function() {
+      document.getElementById('groupPracticeToggle').classList.toggle('open');
+    });
+  </script>
+
+</body>
+</html>

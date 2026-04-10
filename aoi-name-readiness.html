@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Name Readiness — Age of Instability</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Spectral:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a href="index.html" class="site-title">Leadership Circles</a>
+      <nav class="site-nav">
+        <a href="age-of-instability.html" class="nav-back">← Age of Instability</a>
+        <a href="aoi-attend.html">Attend</a>
+        <a href="aoi-interpret.html">Interpret</a>
+        <a href="aoi-discern.html">Discern</a>
+        <a href="aoi-imagine.html">Imagine</a>
+        <a href="aoi-name-readiness.html" class="active">Name Readiness</a>
+        <a href="aoi-learn.html">Learn</a>
+        <a href="aoi-next-steps.html">Next Steps</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="movement-hero">
+    <div class="movement-hero-inner">
+      <span class="hero-big-num" aria-hidden="true">05</span>
+      <span class="movement-num-label fade-in">Movement 05 — Age of Instability</span>
+      <h1 class="fade-in-2">Name Readiness</h1>
+      <p class="movement-tagline fade-in-3">Honestly assessing your community's capacity to navigate — not manage — instability</p>
+    </div>
+  </section>
+
+  <!-- PROGRESS TRACKER -->
+  <div class="attend-progress" id="readinessProgress" aria-label="Step progress">
+    <div class="attend-progress-inner">
+      <div class="progress-step-item active" data-for-step="1">
+        <span class="progress-step-num">01</span>
+        <span class="progress-step-label">Encounter</span>
+      </div>
+      <div class="progress-line"></div>
+      <div class="progress-step-item" data-for-step="2">
+        <span class="progress-step-num">02</span>
+        <span class="progress-step-label">Surface</span>
+      </div>
+      <div class="progress-line"></div>
+      <div class="progress-step-item" data-for-step="3">
+        <span class="progress-step-num">03</span>
+        <span class="progress-step-label">Reframe</span>
+      </div>
+      <div class="progress-line"></div>
+      <div class="progress-step-item" data-for-step="4">
+        <span class="progress-step-num">04</span>
+        <span class="progress-step-label">Apply</span>
+      </div>
+      <div class="progress-line"></div>
+      <div class="progress-step-item" data-for-step="5">
+        <span class="progress-step-num">05</span>
+        <span class="progress-step-label">Integrate</span>
+      </div>
+    </div>
+  </div>
+
+  <main class="attend-steps">
+
+    <p class="attend-save-notice">Your responses are saved automatically in this browser</p>
+
+    <!-- ======================== -->
+    <!-- STEP 1 — ENCOUNTER       -->
+    <!-- ======================== -->
+    <section class="attend-step" id="step-encounter" data-step="1">
+
+      <div class="step-badge">
+        <span class="step-num-pill">01</span>
+        <span class="step-name-pill">Encounter</span>
+      </div>
+
+      <h2 class="step-heading">The honest conversation<br>most leadership teams avoid.</h2>
+      <p class="step-intro">Read this fragment slowly. Notice what it names — and what it makes you want to avoid naming.</p>
+
+      <div class="encounter-card">
+        <span class="encounter-card-label">Conversation Fragment — Leadership Retreat, 2025</span>
+        <p>The lead pastor had been talking for fifteen minutes about what the community could become — a wider presence in the neighbourhood, deeper intersectoral partnerships, a model of trauma-informed ministry. She was good at this. The vision was real.</p>
+        <p>Then the chair of the board asked the question that changed the room: "I believe all of that. But I want to ask something harder. Do we have what it would actually take? Not what we want to have — what we actually have, right now, with these people, this budget, this level of energy in the room?"</p>
+        <p>There was a long silence. Then the associate pastor said something that nobody had said before in a formal meeting: "Honestly? I don't think we do. I think we're running on fumes. And I think the vision is real, and I think we're not ready for it. And I don't know what to do with both of those things being true at the same time."</p>
+        <p><em>Readiness in instability is not pessimism. It is the refusal to let vision substitute for honest assessment — and the courage to hold both simultaneously.</em></p>
+      </div>
+
+      <div class="attend-response">
+        <label class="attend-response-label" for="r-encounter">Your first response</label>
+        <textarea
+          id="r-encounter"
+          class="attend-textarea"
+          data-key="encounter"
+          placeholder="What does this stir? Where do you recognize the tension between vision and honest capacity in your own context?"
+          rows="4"
+        ></textarea>
+        <span class="attend-save-hint" id="hint-encounter">auto-saved</span>
+      </div>
+
+    </section>
+
+    <!-- ======================== -->
+    <!-- STEP 2 — SURFACE         -->
+    <!-- ======================== -->
+    <section class="attend-step" id="step-surface" data-step="2">
+
+      <div class="step-badge">
+        <span class="step-num-pill">02</span>
+        <span class="step-name-pill">Surface</span>
+      </div>
+
+      <h2 class="step-heading">Name what is honestly true about your capacity right now.</h2>
+      <p class="step-intro">Three prompts. Instability assessment requires more honesty than most organizational cultures make room for. Try to name what's actually there — not what you wish were true, and not the worst-case version either.</p>
+
+      <div class="attend-response">
+        <label class="attend-response-label" for="r-honest">The most honest assessment of where my community is right now in relation to instability is...</label>
+        <textarea
+          id="r-honest"
+          class="attend-textarea"
+          data-key="surface_honest"
+          placeholder="Not the version you'd share with the denomination. Not the version designed to protect morale. The one that's true."
+          rows="4"
+        ></textarea>
+        <span class="attend-save-hint" id="hint-surface_honest">auto-saved</span>
+      </div>
+
+      <div class="attend-response" style="margin-top: 1.5rem;">
+        <label class="attend-response-label" for="r-overstate">Something my community overstates about its readiness for instability is...</label>
+        <textarea
+          id="r-overstate"
+          class="attend-textarea"
+          data-key="surface_overstate"
+          placeholder="What do you present as more stable, more ready, or more resilient than it actually is? Where does the gap between presentation and reality show up most clearly?"
+          rows="3"
+        ></textarea>
+        <span class="attend-save-hint" id="hint-surface_overstate">auto-saved</span>
+      </div>
+
+      <div class="attend-response" style="margin-top: 1.5rem;">
+        <label class="attend-response-label" for="r-understate">Something my community understates — a genuine capacity that often goes unrecognized — is...</label>
+        <textarea
+          id="r-understate"
+          class="attend-textarea"
+          data-key="surface_understate"
+          placeholder="What does your community actually have that you tend to discount or overlook? What strength is hiding in plain sight?"
+          rows="3"
+        ></textarea>
+        <span class="attend-save-hint" id="hint-surface_understate">auto-saved</span>
+      </div>
+
+    </section>
+
+    <!-- ======================== -->
+    <!-- STEP 3 — REFRAME         -->
+    <!-- ======================== -->
+    <section class="attend-step" id="step-reframe" data-step="3">
+
+      <div class="step-badge">
+        <span class="step-num-pill">03</span>
+        <span class="step-name-pill">Reframe</span>
+      </div>
+
+      <h2 class="step-heading">Adaptive capacity has multiple dimensions.</h2>
+      <p class="step-intro">Readiness for navigating instability is not primarily a financial question — though financial capacity matters. It is shaped by five dimensions of community life. Select the ones where your community's capacity is most relevant to the instability you're facing.</p>
+
+      <div class="readiness-dim-tiles">
+
+        <div class="readiness-dim-tile" data-dim="Emotional">
+          <div class="readiness-dim-name">Emotional</div>
+          <div class="readiness-dim-blurb">The community's collective capacity to absorb grief, anxiety, and uncertainty without fragmentation — the emotional bandwidth available for navigating disruption together</div>
+        </div>
+
+        <div class="readiness-dim-tile" data-dim="Relational">
+          <div class="readiness-dim-name">Relational</div>
+          <div class="readiness-dim-blurb">The depth and breadth of trust within the community — between members, between leadership and congregation, and between the community and its neighbours and partners</div>
+        </div>
+
+        <div class="readiness-dim-tile" data-dim="Adaptive Capacity">
+          <div class="readiness-dim-name">Adaptive Capacity</div>
+          <div class="readiness-dim-blurb">The community's actual track record of changing, releasing things that no longer work, and learning from disruption — not just its stated openness to change</div>
+        </div>
+
+        <div class="readiness-dim-tile" data-dim="Spiritual">
+          <div class="readiness-dim-name">Spiritual</div>
+          <div class="readiness-dim-blurb">The depth of the community's spiritual formation — whether the community has the theological and contemplative resources to hold uncertainty, lament, and ambiguity without collapsing into either denial or despair</div>
+        </div>
+
+        <div class="readiness-dim-tile" data-dim="Organizational">
+          <div class="readiness-dim-name">Organizational</div>
+          <div class="readiness-dim-blurb">The community's structural and financial capacity — staff, budget, decision-making processes, and institutional flexibility — to absorb change without losing operational stability</div>
+        </div>
+
+      </div>
+
+      <div class="attend-response" style="margin-top: 1.75rem;">
+        <label class="attend-response-label" for="r-reframe">Go deeper on one</label>
+        <textarea
+          id="r-reframe"
+          class="attend-textarea"
+          data-key="reframe_dim"
+          placeholder="Which dimension of adaptive capacity is most relevant to the instability your community is facing — and what is the honest state of that dimension right now?"
+          rows="4"
+        ></textarea>
+        <span class="attend-save-hint" id="hint-reframe_dim">auto-saved</span>
+      </div>
+
+    </section>
+
+    <!-- ======================== -->
+    <!-- STEP 4 — APPLY           -->
+    <!-- ======================== -->
+    <section class="attend-step" id="step-apply" data-step="4">
+
+      <div class="step-badge">
+        <span class="step-num-pill">04</span>
+        <span class="step-name-pill">Apply</span>
+      </div>
+
+      <h2 class="step-heading">Map your community's instability readiness.</h2>
+      <p class="step-intro">Four columns. Not a performance review — an honest accounting. Take time with each. The goal is a clear-eyed picture, not a damning verdict.</p>
+
+      <div class="readiness-map">
+
+        <div class="readiness-map-col">
+          <div class="readiness-map-col-header">
+            <span class="readiness-map-col-name">Strength</span>
+          </div>
+          <div class="readiness-map-col-body">
+            <p class="readiness-map-col-hint">What genuine adaptive capacity does your community have right now — something you can actually rely on in a season of sustained instability?</p>
+            <textarea
+              class="attend-textarea"
+              data-key="map_strength"
+              placeholder="We genuinely have..."
+              rows="5"
+            ></textarea>
+          </div>
+        </div>
+
+        <div class="readiness-map-col">
+          <div class="readiness-map-col-header">
+            <span class="readiness-map-col-name">Constraint</span>
+          </div>
+          <div class="readiness-map-col-body">
+            <p class="readiness-map-col-hint">What is limiting your community's capacity to navigate instability right now — not a problem you can solve quickly, but a real constraint on what is possible?</p>
+            <textarea
+              class="attend-textarea"
+              data-key="map_constraint"
+              placeholder="We are genuinely limited by..."
+              rows="5"
+            ></textarea>
+          </div>
+        </div>
+
+        <div class="readiness-map-col">
+          <div class="readiness-map-col-header">
+            <span class="readiness-map-col-name">Risk</span>
+          </div>
+          <div class="readiness-map-col-body">
+            <p class="readiness-map-col-hint">What could break down in your community if instability intensifies? Not a catastrophic projection — a realistic concern about where your adaptive capacity is thinnest?</p>
+            <textarea
+              class="attend-textarea"
+              data-key="map_risk"
+              placeholder="If instability deepens, what's most at risk is..."
+              rows="5"
+            ></textarea>
+          </div>
+        </div>
+
+        <div class="readiness-map-col">
+          <div class="readiness-map-col-header">
+            <span class="readiness-map-col-name">Condition Needed</span>
+          </div>
+          <div class="readiness-map-col-body">
+            <p class="readiness-map-col-hint">What would need to be true — about your community's spiritual formation, relational trust, structural capacity, or leadership — for you to navigate instability more faithfully?</p>
+            <textarea
+              class="attend-textarea"
+              data-key="map_condition"
+              placeholder="To navigate instability faithfully, we would need..."
+              rows="5"
+            ></textarea>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Disruption -->
+      <div class="disruption-block">
+        <span class="disruption-tag">Challenge</span>
+        <h3 class="disruption-title">The Capacity You're Not Counting</h3>
+        <p class="disruption-framing">Most readiness assessments focus on what is absent — what the community lacks, what it can't do, what it has lost. But in seasons of instability, communities often have latent capacity that has not yet been named or activated: people who have navigated personal disruption, relationships with neighbours that haven't been leveraged, spiritual resources that haven't been mobilized, organizational flexibility that hasn't been tested.</p>
+        <p class="disruption-prompt">"Name one capacity your community has that is not yet being counted in how your leadership thinks about readiness. It may be a person, a relationship, a spiritual practice, an organizational form, or something else entirely. Why hasn't it been counted? What would it mean to count it?"</p>
+      </div>
+
+      <!-- Micro-practice -->
+      <div class="msection" style="margin-top: 1.5rem;">
+        <span class="section-label">Micro-Practice — The Honest Inventory</span>
+        <p>This week, have a fifteen-minute conversation with one other person in your community's leadership — using only two questions: <em>What do we genuinely have?</em> and <em>What do we genuinely not have?</em> Write down the answers before you leave the conversation. Notice the gap between what you're publicly claiming about your community's readiness and what the honest inventory reveals.</p>
+        <div class="micro-aside" style="margin-top: 1.25rem;">
+          <div class="micro-aside-item">
+            <span class="micro-aside-label">Why it matters</span>
+            <p>Communities that overstate their readiness tend to take on more than they can carry — and the gap between promise and capacity becomes a crisis rather than a managed constraint. Honest assessment is a form of care for the community.</p>
+          </div>
+          <div class="micro-aside-item">
+            <span class="micro-aside-label">Group version</span>
+            <p>Present the Readiness Map to your leadership team. Ask each person to fill it out independently, then compare. Notice where assessments converge and diverge — the divergences are where the most important conversations live.</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ======================== -->
+    <!-- STEP 5 — INTEGRATE       -->
+    <!-- ======================== -->
+    <section class="attend-step" id="step-integrate" data-step="5">
+
+      <div class="step-badge">
+        <span class="step-num-pill">05</span>
+        <span class="step-name-pill">Integrate</span>
+      </div>
+
+      <h2 class="step-heading">Name your community's Instability Capacity Profile.</h2>
+      <p class="step-intro">Not a report card. A grounded, honest accounting of where your community is — what it has, what it needs, and what it is ready to carry into the next season. This carries forward into Learn.</p>
+
+      <div class="readiness-artifact">
+        <div class="readiness-artifact-header">
+          <span>Instability Capacity Profile — Age of Instability</span>
+          <span class="carry-card-date" id="readinessDate"></span>
+        </div>
+        <div class="readiness-artifact-body">
+
+          <div class="readiness-artifact-field">
+            <span class="readiness-artifact-label">Ready Now</span>
+            <p class="readiness-artifact-hint">What your community genuinely has to navigate instability — capacities and strengths you can rely on</p>
+            <textarea
+              class="attend-textarea readiness-artifact-fill"
+              data-key="artifact_ready"
+              placeholder="We are genuinely ready to..."
+              rows="3"
+            ></textarea>
+          </div>
+
+          <div class="readiness-artifact-field">
+            <span class="readiness-artifact-label">Not Ready Yet</span>
+            <p class="readiness-artifact-hint">What your community does not yet have — honest constraints that need to be named, not managed around</p>
+            <textarea
+              class="attend-textarea readiness-artifact-fill"
+              data-key="artifact_not_ready"
+              placeholder="We are not yet ready to..."
+              rows="3"
+            ></textarea>
+          </div>
+
+          <div class="readiness-artifact-field">
+            <span class="readiness-artifact-label">What Needs Attention</span>
+            <p class="readiness-artifact-hint">The dimension of adaptive capacity that most needs investment, development, or honest reckoning before the next season</p>
+            <textarea
+              class="attend-textarea readiness-artifact-fill"
+              data-key="artifact_attention"
+              placeholder="The thing that most needs our attention before instability deepens is..."
+              rows="3"
+            ></textarea>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Tension -->
+      <div class="artifact-block artifact-tension" style="margin-top: 2rem;">
+        <span class="artifact-type-label">Tension</span>
+        <h3 class="artifact-title">Readiness Is Not a Prerequisite for Faithfulness</h3>
+        <p>One of the traps of readiness assessment is the assumption that the community must be ready before it can respond faithfully. But the biblical pattern is often the reverse: communities are called into readiness through response, not before it. The disciples were not ready when they were sent. The prophets were not equipped when they were called. Readiness and faithfulness are not sequential — they develop together.</p>
+        <p>What this means practically is that the readiness assessment is not a gate. It is a map. Knowing what your community has and lacks doesn't determine whether you act — it shapes how you act and what kind of support you seek. Faithful response often begins not with full capacity but with honest acknowledgment of what is available, and the decision to act from that place rather than waiting for conditions that may not arrive.</p>
+      </div>
+
+      <!-- Group practice -->
+      <div class="group-toggle" id="groupPracticeToggle">
+        <div class="group-toggle-header" id="groupPracticeBtn">
+          <span class="group-toggle-label">For teams and leadership groups — Naming Readiness Together</span>
+          <span class="group-toggle-chevron">+</span>
+        </div>
+        <div class="group-toggle-body">
+          <ol class="group-practice-steps">
+            <li>Read the encounter scenario together. Ask: Has our team ever had this conversation — the honest one about whether we have what this actually requires? If not, name why not.</li>
+            <li>Each person completes the Readiness Map independently, then shares one item from each column. Notice where assessments converge and where they diverge significantly.</li>
+            <li>Together, identify the dimension of adaptive capacity your community is most avoiding discussing — and name why it is being avoided.</li>
+            <li>Ask together: What is one latent capacity in our community that we have not yet counted? Make a concrete plan to activate or invest in it.</li>
+            <li>Close with each person naming one honest thing about the community's current readiness that they commit to holding without minimizing or catastrophizing over the next three months.</li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- Threshold -->
+      <div class="threshold-section">
+        <div class="threshold-prompt">
+          <span class="threshold-label">Carry Forward</span>
+          <p class="threshold-text">The most honest thing I know about my community's readiness for instability — the thing I'm no longer pretending not to see — is...</p>
+        </div>
+        <div class="threshold-prompt">
+          <span class="threshold-label">Return to This</span>
+          <p class="threshold-text">Come back in six months. What has changed in your community's adaptive capacity — and what happened that changed it? Were the constraints you named as severe as you feared, or more so?</p>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="integrate-actions">
+        <a href="aoi-learn.html" class="btn-move-forward">
+          <div class="btn-move-forward-label">
+            <div class="btn-move-forward-next">Next Movement</div>
+            <div class="btn-move-forward-name">Learn →</div>
+          </div>
+          <span class="btn-forward-arrow">→</span>
+        </a>
+        <p class="integrate-note">You can return to this page at any time — your responses are saved in this browser.</p>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>A formation resource from the Futuring Hub — MacRae Centre for Christian Faith and Culture, Acadia Divinity College</p>
+  </footer>
+
+  <script>
+    var LS = 'aoi_readiness_';
+    function save(key, val) { localStorage.setItem(LS + key, val); }
+    function load(key) { return localStorage.getItem(LS + key) || ''; }
+
+    // ── Progress tracker ──────────────────────────────────────────────
+    var stepSections  = document.querySelectorAll('.attend-step[data-step]');
+    var progressItems = document.querySelectorAll('.progress-step-item[data-for-step]');
+
+    function updateProgress() {
+      var scrollTop = window.scrollY + window.innerHeight * 0.38;
+      var activeStep = 1;
+      stepSections.forEach(function(section) {
+        if (section.offsetTop <= scrollTop) activeStep = parseInt(section.dataset.step);
+      });
+      progressItems.forEach(function(item) {
+        var n = parseInt(item.dataset.forStep);
+        item.classList.remove('active', 'visited');
+        if (n < activeStep)  item.classList.add('visited');
+        if (n === activeStep) item.classList.add('active');
+      });
+    }
+    window.addEventListener('scroll', updateProgress, { passive: true });
+    updateProgress();
+
+    // ── Textarea auto-save ────────────────────────────────────────────
+    document.querySelectorAll('textarea[data-key]').forEach(function(ta) {
+      var key  = LS + ta.dataset.key;
+      var hint = document.getElementById('hint-' + ta.dataset.key);
+      var saved = localStorage.getItem(key);
+      if (saved) ta.value = saved;
+
+      ta.addEventListener('input', function() {
+        localStorage.setItem(key, this.value);
+        if (hint) {
+          hint.classList.add('active');
+          clearTimeout(hint._t);
+          hint._t = setTimeout(function() { hint.classList.remove('active'); }, 1200);
+        }
+      });
+    });
+
+    // ── Readiness dimension tiles (multi-select) ──────────────────────
+    var savedDims = JSON.parse(localStorage.getItem(LS + 'dims_selected') || '[]');
+    document.querySelectorAll('.readiness-dim-tile').forEach(function(tile) {
+      if (savedDims.indexOf(tile.dataset.dim) !== -1) tile.classList.add('selected');
+      tile.addEventListener('click', function() {
+        this.classList.toggle('selected');
+        var selected = [];
+        document.querySelectorAll('.readiness-dim-tile.selected').forEach(function(t) { selected.push(t.dataset.dim); });
+        localStorage.setItem(LS + 'dims_selected', JSON.stringify(selected));
+      });
+    });
+
+    // ── Date ──────────────────────────────────────────────────────────
+    var pd = document.getElementById('readinessDate');
+    if (pd) pd.textContent = new Date().toLocaleDateString('en-CA', { year: 'numeric', month: 'short', day: 'numeric' });
+
+    // ── Group practice toggle ─────────────────────────────────────────
+    document.getElementById('groupPracticeBtn').addEventListener('click', function() {
+      document.getElementById('groupPracticeToggle').classList.toggle('open');
+    });
+  </script>
+
+</body>
+</html>

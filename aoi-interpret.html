@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interpret — Age of Instability</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Spectral:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a href="index.html" class="site-title">Leadership Circles</a>
+      <nav class="site-nav">
+        <a href="age-of-instability.html" class="nav-back">← Age of Instability</a>
+        <a href="aoi-attend.html">Attend</a>
+        <a href="aoi-interpret.html" class="active">Interpret</a>
+        <a href="aoi-discern.html">Discern</a>
+        <a href="aoi-imagine.html">Imagine</a>
+        <a href="aoi-name-readiness.html">Name Readiness</a>
+        <a href="aoi-learn.html">Learn</a>
+        <a href="aoi-next-steps.html">Next Steps</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="movement-hero">
+    <div class="movement-hero-inner">
+      <span class="hero-big-num" aria-hidden="true">02</span>
+      <span class="movement-num-label fade-in">Movement 02 — Age of Instability</span>
+      <h1 class="fade-in-2">Interpret</h1>
+      <p class="movement-tagline fade-in-3">Making theological meaning of what instability is revealing — and what it demands</p>
+    </div>
+  </section>
+
+  <!-- PROGRESS TRACKER -->
+  <div class="attend-progress" id="interpretProgress" aria-label="Step progress">
+    <div class="attend-progress-inner">
+      <div class="progress-step-item active" data-for-step="1">
+        <span class="progress-step-num">01</span>
+        <span class="progress-step-label">Encounter</span>
+      </div>
+      <div class="progress-line"></div>
+      <div class="progress-step-item" data-for-step="2">
+        <span class="progress-step-num">02</span>
+        <span class="progress-step-label">Surface</span>
+      </div>
+      <div class="progress-line"></div>
+      <div class="progress-step-item" data-for-step="3">
+        <span class="progress-step-num">03</span>
+        <span class="progress-step-label">Reframe</span>
+      </div>
+      <div class="progress-line"></div>
+      <div class="progress-step-item" data-for-step="4">
+        <span class="progress-step-num">04</span>
+        <span class="progress-step-label">Apply</span>
+      </div>
+      <div class="progress-line"></div>
+      <div class="progress-step-item" data-for-step="5">
+        <span class="progress-step-num">05</span>
+        <span class="progress-step-label">Integrate</span>
+      </div>
+    </div>
+  </div>
+
+  <main class="attend-steps">
+
+    <p class="attend-save-notice">Your responses are saved automatically in this browser</p>
+
+    <!-- ======================== -->
+    <!-- STEP 1 — ENCOUNTER       -->
+    <!-- ======================== -->
+    <section class="attend-step" id="step-encounter" data-step="1">
+
+      <div class="step-badge">
+        <span class="step-num-pill">01</span>
+        <span class="step-name-pill">Encounter</span>
+      </div>
+
+      <h2 class="step-heading">Two churches. Same instability.<br>Completely different interpretations.</h2>
+      <p class="step-intro">Read both slowly. Notice what each is saying about God, the future, and the community's role. Notice where you feel resistance — and where you feel recognition.</p>
+
+      <div class="encounter-card">
+        <span class="encounter-card-label">Community A — Fortress Interpretation</span>
+        <p>The congregation has watched its neighbourhood change dramatically over fifteen years. They have responded by strengthening what they already have: the youth program is more robust, the Sunday service more carefully curated, the building more maintained. The pastor talks about holding the line — about being a stable presence in an unstable world. "People need something that doesn't change," he says, "and we can be that."</p>
+        <p>The congregation feels secure. But newcomers to the neighbourhood — many of whom are younger, more racially diverse, economically precarious — rarely come back after a first visit. The things the community has held stable are not the things that feel relevant or welcoming to the people who have moved in. The pastor is not wrong that people need stability. But the community he is stabilizing does not include them.</p>
+      </div>
+
+      <div class="encounter-card" style="margin-top: 1.25rem;">
+        <span class="encounter-card-label">Community B — Compass Interpretation</span>
+        <p>The congregation is smaller and poorer than it was five years ago. Three long-standing families have left. The building fund is gone. The pastor has stopped pretending this is a temporary disruption. At a recent board meeting, she said something that surprised everyone: "I think instability is our formation context now — not an interruption to it. We have to become the kind of community that can hold uncertainty without collapsing."</p>
+        <p>The congregation has started doing things it would not have considered before: sharing pastoral care with another denomination, hosting a climate anxiety group for people who are not members, partnering with a local food network it used to only donate to. The pastor doesn't know where this leads. She knows what questions are orienting the journey — and she has stopped expecting those questions to resolve quickly.</p>
+      </div>
+
+      <div class="attend-response">
+        <label class="attend-response-label" for="r-encounter">Your first response</label>
+        <textarea
+          id="r-encounter"
+          class="attend-textarea"
+          data-key="encounter"
+          placeholder="What do you notice in these two communities? Where do you feel recognition — or resistance?"
+          rows="4"
+        ></textarea>
+        <span class="attend-save-hint" id="hint-encounter">auto-saved</span>
+      </div>
+
+    </section>
+
+    <!-- ======================== -->
+    <!-- STEP 2 — SURFACE         -->
+    <!-- ======================== -->
+    <section class="attend-step" id="step-surface" data-step="2">
+
+      <div class="step-badge">
+        <span class="step-num-pill">02</span>
+        <span class="step-name-pill">Surface</span>
+      </div>
+
+      <h2 class="step-heading">What is shaping how you interpret instability?</h2>
+      <p class="step-intro">Three layers. Work through them in order. Interpretation is rarely neutral — it's shaped by emotional register, theological framework, and whose voice is informing it.</p>
+
+      <!-- Layer A: Emotional register (always shown) -->
+      <div class="surface-section always-shown" id="surfaceA">
+        <div class="surface-section-label">Layer A</div>
+        <h3 class="surface-section-heading">The Emotional Register</h3>
+        <p class="surface-section-hint">Before theology — emotion. Our interpretive frameworks are always shaped by what we are feeling toward the thing we're trying to understand. Name the emotional register you bring to instability right now.</p>
+
+        <div class="attend-response">
+          <label class="attend-response-label" for="r-emotion">How do you feel when you look directly at the instability in your context?</label>
+          <textarea
+            id="r-emotion"
+            class="attend-textarea"
+            data-key="surface_emotion"
+            placeholder="Grief, fear, anger, numbness, curiosity, defiance, hope, confusion — name what's actually there..."
+            rows="3"
+          ></textarea>
+          <span class="attend-save-hint" id="hint-surface_emotion">auto-saved</span>
+        </div>
+
+        <button class="reveal-btn" id="revealB">Continue to Layer B</button>
+      </div>
+
+      <hr class="surface-divider" id="dividerAB" style="display:none;">
+
+      <!-- Layer B: Theological lens -->
+      <div class="surface-section" id="surfaceB">
+        <div class="surface-section-label">Layer B</div>
+        <h3 class="surface-section-heading">The Interpretive Framework</h3>
+        <p class="surface-section-hint">Every community brings a theological framework to disruption — even if it's unnamed. What framework is most active in how you or your community is currently interpreting instability?</p>
+
+        <div class="attend-response">
+          <label class="attend-response-label" for="r-framework">What theological or cultural framework is shaping how your community is interpreting what is happening?</label>
+          <textarea
+            id="r-framework"
+            class="attend-textarea"
+            data-key="surface_framework"
+            placeholder="Survival, faithfulness, prophetic witness, cultural withdrawal, resilience, adaptation, decline narrative, mission — what lens is most active?"
+            rows="3"
+          ></textarea>
+          <span class="attend-save-hint" id="hint-surface_framework">auto-saved</span>
+        </div>
+
+        <button class="reveal-btn" id="revealC">Continue to Layer C</button>
+      </div>
+
+      <hr class="surface-divider" id="dividerBC" style="display:none;">
+
+      <!-- Layer C: Whose voice is missing -->
+      <div class="surface-section" id="surfaceC">
+        <div class="surface-section-label">Layer C</div>
+        <h3 class="surface-section-heading">Whose Interpretation Is Missing</h3>
+        <p class="surface-section-hint">The people who are absorbing the most instability often have the most accurate read on it — and the least access to the conversations where interpretation happens. Whose voice is absent from your community's current interpretation of what is unfolding?</p>
+
+        <div class="attend-response">
+          <label class="attend-response-label" for="r-missing">Who is not in the room when your community interprets what is happening — and what might they see that you are missing?</label>
+          <textarea
+            id="r-missing"
+            class="attend-textarea"
+            data-key="surface_missing"
+            placeholder="Young adults, economically precarious members, newcomers, those who have left — who holds interpretation you don't have access to?"
+            rows="3"
+          ></textarea>
+          <span class="attend-save-hint" id="hint-surface_missing">auto-saved</span>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ======================== -->
+    <!-- STEP 3 — REFRAME         -->
+    <!-- ======================== -->
+    <section class="attend-step" id="step-reframe" data-step="3">
+
+      <div class="step-badge">
+        <span class="step-num-pill">03</span>
+        <span class="step-name-pill">Reframe</span>
+      </div>
+
+      <h2 class="step-heading">Fortress or Compass?</h2>
+      <p class="step-intro">The Age of Instability report names a central interpretive fork: communities that interpret their calling as maintaining a stable fortress against change, and communities that interpret instability as a compass-orienting journey. These are not strategies — they are theological orientations. Neither is entirely wrong. Read what each actually claims.</p>
+
+      <div class="contrast-grid">
+
+        <div class="contrast-card">
+          <span class="contrast-card-label">Fortress Orientation</span>
+          <span class="contrast-card-stance">Stability as Faithfulness</span>
+          <p class="contrast-card-quote">The calling of the community is to provide a stable, unchanging witness in an unstable world. What the community holds constant — its liturgy, its doctrine, its culture, its building — is itself a form of prophetic resistance to disorder. Change is managed carefully, if at all. The primary virtue is continuity.</p>
+          <p class="contrast-card-sub"><em>The risk:</em> A community that cannot move with what God is doing in the world cannot be a compass for others navigating it. Stability offered to a changing world can become inaccessibility without anyone noticing the difference.</p>
+        </div>
+
+        <div class="contrast-card">
+          <span class="contrast-card-label">Compass Orientation</span>
+          <span class="contrast-card-stance">Presence as Faithfulness</span>
+          <p class="contrast-card-quote">The calling of the community is to remain oriented to God's direction even as everything else shifts — to be a compass that helps others navigate, not a fortress that holds them apart from what's happening. This requires the community itself to be formed by instability, not merely to survive it. The primary virtue is adaptive fidelity.</p>
+          <p class="contrast-card-sub"><em>The risk:</em> A community that prizes adaptability without a stable centre can lose its theological integrity. Not every direction the community might move is the right one. Compass without True North is just drift.</p>
+        </div>
+
+      </div>
+
+      <div class="attend-response" style="margin-top: 1.75rem;">
+        <label class="attend-response-label" for="r-reframe">Where does your community tend to land — and what does that reveal?</label>
+        <textarea
+          id="r-reframe"
+          class="attend-textarea"
+          data-key="reframe_orientation"
+          placeholder="Does your community lean fortress or compass — or is it somewhere in between? What theological convictions underlie that orientation? What does it cost?"
+          rows="4"
+        ></textarea>
+        <span class="attend-save-hint" id="hint-reframe_orientation">auto-saved</span>
+      </div>
+
+    </section>
+
+    <!-- ======================== -->
+    <!-- STEP 4 — APPLY           -->
+    <!-- ======================== -->
+    <section class="attend-step" id="step-apply" data-step="4">
+
+      <div class="step-badge">
+        <span class="step-num-pill">04</span>
+        <span class="step-name-pill">Apply</span>
+      </div>
+
+      <h2 class="step-heading">Interpret what is actually happening in your context.</h2>
+      <p class="step-intro">Three prompts, structured to move from observation to theological meaning to community accountability. Write honestly — the goal is interpretation, not resolution.</p>
+
+      <div class="discern-triad">
+
+        <div class="discern-triad-item">
+          <div class="discern-triad-header">
+            <div class="discern-triad-marker">A</div>
+            <span>What is instability actually doing to your community?</span>
+          </div>
+          <p class="discern-triad-prompt">Go beneath the presenting challenges. What is instability revealing, exposing, or threatening about what your community is and how it understands itself?</p>
+          <textarea
+            class="attend-textarea"
+            data-key="apply_doing"
+            placeholder="Instability is revealing in my community that..."
+            rows="4"
+          ></textarea>
+        </div>
+
+        <div class="discern-triad-item">
+          <div class="discern-triad-header">
+            <div class="discern-triad-marker">B</div>
+            <span>What theological conviction most needs to be heard right now?</span>
+          </div>
+          <p class="discern-triad-prompt">Not the conviction that is most comforting or most familiar — but the one that is most necessary for your community to hear and believe in this specific season.</p>
+          <textarea
+            class="attend-textarea"
+            data-key="apply_conviction"
+            placeholder="The theological truth my community most needs to hear in this season is..."
+            rows="4"
+          ></textarea>
+        </div>
+
+        <div class="discern-triad-item">
+          <div class="discern-triad-header">
+            <div class="discern-triad-marker">C</div>
+            <span>What story is your community telling itself about instability?</span>
+          </div>
+          <p class="discern-triad-prompt">Every community has a narrative about what is happening and why. What story is yours telling — and is it faithful to what is actually there, or is it protecting something that needs to be questioned?</p>
+          <textarea
+            class="attend-textarea"
+            data-key="apply_story"
+            placeholder="The story my community is telling about instability is... and what it might be avoiding is..."
+            rows="4"
+          ></textarea>
+        </div>
+
+      </div>
+
+      <!-- Disruption -->
+      <div class="disruption-block">
+        <span class="disruption-tag">Challenge</span>
+        <h3 class="disruption-title">The Interpretation That Protects You</h3>
+        <p class="disruption-framing">Every interpretive framework protects something — a sense of identity, a way of doing things, a community's sense of its own continuity. The frameworks we are least willing to question are often the ones protecting the things we are most afraid to lose.</p>
+        <p class="disruption-prompt">"Name the interpretation of instability in your community that, if it were wrong, would require you to change something significant about how you lead, how you allocate resources, or how you understand your community's calling. Why is that interpretation so difficult to question?"</p>
+      </div>
+
+      <!-- Micro-practice -->
+      <div class="msection" style="margin-top: 1.5rem;">
+        <span class="section-label">Micro-Practice — The Reframe Question</span>
+        <p>This week, when you encounter a community challenge — a budget constraint, a program difficulty, a relational conflict — pause before you interpret it as a management problem. Ask instead: <em>What is this revealing about who we are and what we actually believe?</em> Then write down what you see.</p>
+        <div class="micro-aside" style="margin-top: 1.25rem;">
+          <div class="micro-aside-item">
+            <span class="micro-aside-label">Why it matters</span>
+            <p>Leaders trained in management tend to interpret instability through the lens of problem-solving. Theological interpretation requires a different posture — one that asks what God is doing in the disruption, not just how to stabilize it.</p>
+          </div>
+          <div class="micro-aside-item">
+            <span class="micro-aside-label">Group version</span>
+            <p>At your next team gathering, bring a current challenge and ask the group to offer three different theological interpretations of what it means — not solutions, but readings. Notice which interpretations generate energy, which generate fear, and which the group wants to avoid.</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ======================== -->
+    <!-- STEP 5 — INTEGRATE       -->
+    <!-- ======================== -->
+    <section class="attend-step" id="step-integrate" data-step="5">
+
+      <div class="step-badge">
+        <span class="step-num-pill">05</span>
+        <span class="step-name-pill">Integrate</span>
+      </div>
+
+      <h2 class="step-heading">Name your Interpretation Frame.</h2>
+      <p class="step-intro">Interpretation doesn't resolve instability — it orients your community's response to it. Name what this movement has surfaced, what framework you're working from, and what remains contested. This carries forward into Discern.</p>
+
+      <div class="posture-card">
+        <div class="posture-card-header">
+          <span>Interpretation Frame — Age of Instability</span>
+          <span class="carry-card-date" id="interpDate"></span>
+        </div>
+        <div class="posture-card-body">
+
+          <div class="posture-card-field">
+            <span class="posture-field-label affirm">What instability is revealing in my context</span>
+            <p class="posture-field-hint">What is instability exposing about who your community is, what it values, or what it fears?</p>
+            <textarea
+              class="attend-textarea posture-fill"
+              data-key="frame_revealing"
+              placeholder="The deepest thing instability is exposing in my context is..."
+              rows="3"
+            ></textarea>
+          </div>
+
+          <div class="posture-card-field">
+            <span class="posture-field-label question">The theological lens I'm bringing</span>
+            <p class="posture-field-hint">What framework is most shaping how you and your community are making sense of instability — and do you trust it?</p>
+            <textarea
+              class="attend-textarea posture-fill"
+              data-key="frame_lens"
+              placeholder="The framework most shaping my interpretation right now is..."
+              rows="3"
+            ></textarea>
+          </div>
+
+          <div class="posture-card-field">
+            <span class="posture-field-label unresolved">What remains contested or unclear</span>
+            <p class="posture-field-hint">What interpretation question are you carrying into Discern — not resolved, but no longer avoided?</p>
+            <textarea
+              class="attend-textarea posture-fill"
+              data-key="frame_contested"
+              placeholder="What I cannot yet interpret clearly — what I'm carrying into Discern as an open question — is..."
+              rows="3"
+            ></textarea>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Tension -->
+      <div class="artifact-block artifact-tension" style="margin-top: 2rem;">
+        <span class="artifact-type-label">Tension</span>
+        <h3 class="artifact-title">The Theology That Instability Requires</h3>
+        <p>Theology developed in seasons of stability tends to counsel endurance and faithfulness. But stability-formed theology can be inadequate to a season of genuine disruption — not because it is wrong, but because it was formed in conditions that no longer obtain. The church has always had to re-interpret its inheritance in light of new contexts.</p>
+        <p>The question is not whether to do theology in instability, but whether to do it with enough honesty to let the instability actually challenge what we believe — not just confirm it. This is harder than it sounds. It requires the willingness to say: what I inherited may not be enough for where we are going.</p>
+      </div>
+
+      <!-- Group practice -->
+      <div class="group-toggle" id="groupPracticeToggle">
+        <div class="group-toggle-header" id="groupPracticeBtn">
+          <span class="group-toggle-label">For teams and leadership groups — Interpretation in Community</span>
+          <span class="group-toggle-chevron">+</span>
+        </div>
+        <div class="group-toggle-body">
+          <ol class="group-practice-steps">
+            <li>Read the two encounter scenarios (Fortress and Compass) as a group. Ask each person: which community do we more closely resemble — and what do we think about that?</li>
+            <li>Invite each person to name one word that describes the emotional register they bring to instability in your context. Write them all on a whiteboard or shared document. Notice the range.</li>
+            <li>Ask together: What theological conviction is our community most relying on to make sense of what is happening? Is that conviction adequate to what we are actually experiencing?</li>
+            <li>Invite someone to name one perspective on instability that your leadership team does not have access to — and make a plan to seek it out.</li>
+            <li>Close by naming together: Are we operating from a fortress orientation, a compass orientation, or something more complicated? What would it mean to move deliberately toward one of them?</li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- Threshold -->
+      <div class="threshold-section">
+        <div class="threshold-prompt">
+          <span class="threshold-label">Carry Forward</span>
+          <p class="threshold-text">The interpretive question I'm carrying into Discern — the one I can name but not yet resolve — is...</p>
+        </div>
+        <div class="threshold-prompt">
+          <span class="threshold-label">Return to This</span>
+          <p class="threshold-text">Come back after a season. Has your community's interpretation of instability shifted? What changed it — an event, a conversation, a loss, a new voice entering the room?</p>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="integrate-actions">
+        <a href="aoi-discern.html" class="btn-move-forward">
+          <div class="btn-move-forward-label">
+            <div class="btn-move-forward-next">Next Movement</div>
+            <div class="btn-move-forward-name">Discern →</div>
+          </div>
+          <span class="btn-forward-arrow">→</span>
+        </a>
+        <p class="integrate-note">You can return to this page at any time — your responses are saved in this browser.</p>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>A formation resource from the Futuring Hub — MacRae Centre for Christian Faith and Culture, Acadia Divinity College</p>
+  </footer>
+
+  <script>
+    var LS = 'aoi_interpret_';
+    function save(key, val) { localStorage.setItem(LS + key, val); }
+    function load(key) { return localStorage.getItem(LS + key) || ''; }
+
+    // ── Progress tracker ──────────────────────────────────────────────
+    var stepSections  = document.querySelectorAll('.attend-step[data-step]');
+    var progressItems = document.querySelectorAll('.progress-step-item[data-for-step]');
+
+    function updateProgress() {
+      var scrollTop = window.scrollY + window.innerHeight * 0.38;
+      var activeStep = 1;
+      stepSections.forEach(function(section) {
+        if (section.offsetTop <= scrollTop) activeStep = parseInt(section.dataset.step);
+      });
+      progressItems.forEach(function(item) {
+        var n = parseInt(item.dataset.forStep);
+        item.classList.remove('active', 'visited');
+        if (n < activeStep)  item.classList.add('visited');
+        if (n === activeStep) item.classList.add('active');
+      });
+    }
+    window.addEventListener('scroll', updateProgress, { passive: true });
+    updateProgress();
+
+    // ── Textarea auto-save ────────────────────────────────────────────
+    document.querySelectorAll('textarea[data-key]').forEach(function(ta) {
+      var key  = LS + ta.dataset.key;
+      var hint = document.getElementById('hint-' + ta.dataset.key);
+      var saved = localStorage.getItem(key);
+      if (saved) ta.value = saved;
+
+      ta.addEventListener('input', function() {
+        localStorage.setItem(key, this.value);
+        if (hint) {
+          hint.classList.add('active');
+          clearTimeout(hint._t);
+          hint._t = setTimeout(function() { hint.classList.remove('active'); }, 1200);
+        }
+      });
+    });
+
+    // ── Progressive surface reveal ────────────────────────────────────
+    function revealSection(sectionId, dividerId) {
+      var sec = document.getElementById(sectionId);
+      var div = document.getElementById(dividerId);
+      if (sec) sec.classList.add('revealed');
+      if (div) div.style.display = '';
+      save('revealed_' + sectionId, '1');
+      if (sec) setTimeout(function() { sec.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 80);
+    }
+
+    if (load('revealed_surfaceB') === '1') revealSection('surfaceB', 'dividerAB');
+    if (load('revealed_surfaceC') === '1') revealSection('surfaceC', 'dividerBC');
+
+    var btnB = document.getElementById('revealB');
+    var btnC = document.getElementById('revealC');
+    if (btnB) btnB.addEventListener('click', function() { revealSection('surfaceB', 'dividerAB'); });
+    if (btnC) btnC.addEventListener('click', function() { revealSection('surfaceC', 'dividerBC'); });
+
+    // ── Date ──────────────────────────────────────────────────────────
+    var pd = document.getElementById('interpDate');
+    if (pd) pd.textContent = new Date().toLocaleDateString('en-CA', { year: 'numeric', month: 'short', day: 'numeric' });
+
+    // ── Group practice toggle ─────────────────────────────────────────
+    document.getElementById('groupPracticeBtn').addEventListener('click', function() {
+      document.getElementById('groupPracticeToggle').classList.toggle('open');
+    });
+  </script>
+
+</body>
+</html>
