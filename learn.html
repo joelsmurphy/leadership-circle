@@ -37,145 +37,349 @@
     </div>
   </section>
 
-  <main class="movement-content">
+  <!-- PROGRESS TRACKER -->
+  <div class="attend-progress" id="learnProgress" aria-label="Step progress">
+    <div class="attend-progress-inner">
+      <div class="progress-step-item active" data-for-step="1">
+        <span class="progress-step-num">01</span>
+        <span class="progress-step-label">Encounter</span>
+      </div>
+      <div class="progress-line"></div>
+      <div class="progress-step-item" data-for-step="2">
+        <span class="progress-step-num">02</span>
+        <span class="progress-step-label">Surface</span>
+      </div>
+      <div class="progress-line"></div>
+      <div class="progress-step-item" data-for-step="3">
+        <span class="progress-step-num">03</span>
+        <span class="progress-step-label">Reframe</span>
+      </div>
+      <div class="progress-line"></div>
+      <div class="progress-step-item" data-for-step="4">
+        <span class="progress-step-num">04</span>
+        <span class="progress-step-label">Apply</span>
+      </div>
+      <div class="progress-line"></div>
+      <div class="progress-step-item" data-for-step="5">
+        <span class="progress-step-num">05</span>
+        <span class="progress-step-label">Integrate</span>
+      </div>
+    </div>
+  </div>
 
-    <div class="msection fade-in">
-      <span class="section-label">Orientation</span>
-      <p>This movement is not a summary. It is a gathering. You are invited to notice what has genuinely shifted — not what you have learned about innovation as a concept, but what has changed in how you see, decide, lead, and relate. Learning in this sense is not the acquisition of new information. It is the integration of experience over time — what the field guide calls "becoming capable of receiving the future." That capacity does not arrive fully formed. It is practiced, tested, and deepened in real contexts, with real people, over time.</p>
-      <a href="foi-next-steps.html" class="resource-callout">
-        <div class="resource-callout-inner">
-          <span class="resource-callout-label">Application Space</span>
-          <span class="resource-callout-name">Ready to act? Find your practice pathway in Next Steps</span>
+  <main class="attend-steps">
+
+    <p class="attend-save-notice">Your responses are saved automatically in this browser</p>
+
+    <!-- ======================== -->
+    <!-- STEP 1 — ENCOUNTER       -->
+    <!-- ======================== -->
+    <section class="attend-step" id="step-encounter" data-step="1">
+
+      <div class="step-badge">
+        <span class="step-num-pill">01</span>
+        <span class="step-name-pill">Encounter</span>
+      </div>
+
+      <h2 class="step-heading">Someone who completed this circle.<br>What they're carrying now.</h2>
+      <p class="step-intro">This is not a success story. It is a reflection — offered honestly, without resolution. Read it slowly.</p>
+
+      <div class="voice-card">
+        <blockquote class="voice-card-quote">
+          "I came into this circle hoping for clarity about what to do next. I didn't get that — at least not the kind I was looking for. What I got instead was a clearer picture of why I'd been so reluctant to name what I was actually seeing. I'd been calling it wisdom. It was mostly fear.<br><br>
+          The movement that stayed with me longest was Discern. Not the tools — the question about who wasn't in the room. I realized I'd been making decisions in a circle that was comfortable and mostly agreed with me, and calling that leadership. I haven't fixed that yet. But I've stopped pretending it isn't true.<br><br>
+          I don't know if my community will innovate. I'm not even sure that's the right frame anymore. I know I'm paying attention differently — to things I was letting pass without naming, to voices I was politely including but not actually hearing. That feels like something. I hope it's enough."
+        </blockquote>
+        <div class="voice-card-attribution">Ministry leader, Atlantic Canada</div>
+        <div class="voice-card-context">Completed the Futures of Innovation circle — twelve months ago</div>
+      </div>
+
+      <div class="attend-response">
+        <label class="attend-response-label" for="r-encounter">Your first response</label>
+        <textarea
+          id="r-encounter"
+          class="attend-textarea"
+          data-key="encounter"
+          placeholder="What does this reflection stir in you — recognition, resistance, something else? What part lands closest to your own experience of this circle?"
+          rows="4"
+        ></textarea>
+        <span class="attend-save-hint" id="hint-encounter">auto-saved</span>
+      </div>
+
+    </section>
+
+    <!-- ======================== -->
+    <!-- STEP 2 — SURFACE         -->
+    <!-- ======================== -->
+    <section class="attend-step" id="step-surface" data-step="2">
+
+      <div class="step-badge">
+        <span class="step-num-pill">02</span>
+        <span class="step-name-pill">Surface</span>
+      </div>
+
+      <h2 class="step-heading">What has actually shifted?</h2>
+      <p class="step-intro">Before the frameworks for integration — name what is already true. Three honest questions, answered in order.</p>
+
+      <div class="attend-response">
+        <label class="attend-response-label" for="r-shifted">What has genuinely shifted in how you see — not what you've learned about innovation, but what has changed?</label>
+        <textarea
+          id="r-shifted"
+          class="attend-textarea"
+          data-key="surface_shifted"
+          placeholder="Not 'I understand innovation better' — what is actually different in how you see your context, your leadership, or yourself?"
+          rows="4"
+        ></textarea>
+        <span class="attend-save-hint" id="hint-surface_shifted">auto-saved</span>
+      </div>
+
+      <div class="attend-response" style="margin-top: 1.5rem;">
+        <label class="attend-response-label" for="r-unsettled">What has been unsettled — a conviction you held, an assumption you haven't examined, a practice you've been defending?</label>
+        <textarea
+          id="r-unsettled"
+          class="attend-textarea"
+          data-key="surface_unsettled"
+          placeholder="Something I was more certain of before this circle is..."
+          rows="3"
+        ></textarea>
+        <span class="attend-save-hint" id="hint-surface_unsettled">auto-saved</span>
+      </div>
+
+      <div class="attend-response" style="margin-top: 1.5rem;">
+        <label class="attend-response-label" for="r-clearer">What has become clearer — not as a conclusion, but as a direction or a question you're now more willing to inhabit?</label>
+        <textarea
+          id="r-clearer"
+          class="attend-textarea"
+          data-key="surface_clearer"
+          placeholder="Something I now see more clearly — even if I don't know yet what to do with it — is..."
+          rows="3"
+        ></textarea>
+        <span class="attend-save-hint" id="hint-surface_clearer">auto-saved</span>
+      </div>
+
+    </section>
+
+    <!-- ======================== -->
+    <!-- STEP 3 — REFRAME         -->
+    <!-- ======================== -->
+    <section class="attend-step" id="step-reframe" data-step="3">
+
+      <div class="step-badge">
+        <span class="step-num-pill">03</span>
+        <span class="step-name-pill">Reframe</span>
+      </div>
+
+      <h2 class="step-heading">Three categories for what you're carrying.</h2>
+      <p class="step-intro">Learning that is worth keeping takes different forms. Select the category that feels most alive for you right now — the one that most honestly describes the shape of your learning from this circle.</p>
+
+      <div class="integration-tiles">
+
+        <div class="integration-tile" data-tile="shifted">
+          <div class="integration-tile-name">Something Has Shifted</div>
+          <p class="integration-tile-desc">The learning has changed something real — in how you see, how you decide, or how you lead. It may be small. It is not theoretical. It is showing up in behavior, even if only beginning to.</p>
+          <div class="integration-tile-prompt">What would be different in a meeting, a decision, or a conversation this week if this shift were integrated?</div>
         </div>
-        <span class="resource-callout-arrow">→</span>
+
+        <div class="integration-tile" data-tile="unresolved">
+          <div class="integration-tile-name">Something Remains Unresolved</div>
+          <p class="integration-tile-desc">The learning has opened a question you can't close yet. That's not a failure — it may be the most honest form of real learning. You're carrying something you can't quite put down.</p>
+          <div class="integration-tile-prompt">Is this a question you can sit with for a season — or one that requires a conversation, a decision, or an act before it can be carried productively?</div>
+        </div>
+
+        <div class="integration-tile" data-tile="carrying">
+          <div class="integration-tile-name">Something Worth Carrying Forward</div>
+          <p class="integration-tile-desc">The learning hasn't resolved into action yet, but it has named something — a new frame, a renewed commitment, a question that is worth inhabiting over the long term. You know it matters. You're not sure how yet.</p>
+          <div class="integration-tile-prompt">Who needs to know that you're carrying this? And what would it mean to share it — not as a conclusion, but as an ongoing question?</div>
+        </div>
+
+      </div>
+
+      <div class="attend-response" style="margin-top: 1.75rem;">
+        <label class="attend-response-label" for="r-reframe">Respond to your chosen category</label>
+        <textarea
+          id="r-reframe"
+          class="attend-textarea"
+          data-key="reframe_category"
+          placeholder="Write into the question from the category that feels most honest for you right now..."
+          rows="4"
+        ></textarea>
+        <span class="attend-save-hint" id="hint-reframe_category">auto-saved</span>
+      </div>
+
+    </section>
+
+    <!-- ======================== -->
+    <!-- STEP 4 — APPLY           -->
+    <!-- ======================== -->
+    <section class="attend-step" id="step-apply" data-step="4">
+
+      <div class="step-badge">
+        <span class="step-num-pill">04</span>
+        <span class="step-name-pill">Apply</span>
+      </div>
+
+      <h2 class="step-heading">Three sentences. No more.</h2>
+      <p class="step-intro">The constraint matters. Three sentences forces precision — it requires you to choose what is actually most important. Resist the urge to expand it.</p>
+
+      <div class="sentence-integration">
+
+        <div class="sentence-integration-item">
+          <div class="sentence-integration-num">01</div>
+          <div class="sentence-integration-content">
+            <p class="sentence-integration-prompt">One thing that has genuinely shifted in how I see...</p>
+            <textarea
+              class="attend-textarea"
+              data-key="apply_sentence_1"
+              placeholder="One thing that has genuinely shifted in how I see..."
+              rows="3"
+            ></textarea>
+          </div>
+        </div>
+
+        <div class="sentence-integration-item">
+          <div class="sentence-integration-num">02</div>
+          <div class="sentence-integration-content">
+            <p class="sentence-integration-prompt">One question I'm still carrying — that I'm willing to sit with — is...</p>
+            <textarea
+              class="attend-textarea"
+              data-key="apply_sentence_2"
+              placeholder="One question I'm still carrying — that I'm willing to sit with — is..."
+              rows="3"
+            ></textarea>
+          </div>
+        </div>
+
+        <div class="sentence-integration-item">
+          <div class="sentence-integration-num">03</div>
+          <div class="sentence-integration-content">
+            <p class="sentence-integration-prompt">One conversation I need to have in the next thirty days is...</p>
+            <textarea
+              class="attend-textarea"
+              data-key="apply_sentence_3"
+              placeholder="One conversation I need to have in the next thirty days is..."
+              rows="3"
+            ></textarea>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Disruption -->
+      <div class="disruption-block">
+        <span class="disruption-tag">Challenge</span>
+        <h3 class="disruption-title">The Gap Between Insight and Change</h3>
+        <p class="disruption-framing">Learning that changes nothing is not yet formation. Formation shows up in behavior, relationship, and decision over time — not in what we can articulate, but in what we actually do.</p>
+        <p class="disruption-prompt">"You may have learned something here. But have you changed anything? What would be different — in a meeting, a decision, a conversation, a practice — if this learning were genuinely integrated into how you lead? Name one specific thing. Not a posture. A behavior."</p>
+      </div>
+
+      <!-- Group practice -->
+      <div class="group-toggle" id="groupPracticeToggle">
+        <div class="group-toggle-header" id="groupPracticeBtn">
+          <span class="group-toggle-label">For teams and leadership groups — Shared Integration Circle</span>
+          <span class="group-toggle-chevron">+</span>
+        </div>
+        <div class="group-toggle-body">
+          <ol class="group-practice-steps">
+            <li>Gather the group. Open with two minutes of quiet.</li>
+            <li>Each person shares their three sentences. No interruption, no debate — just listening.</li>
+            <li>After all have shared, name together: What are we carrying collectively that we didn't have before? Where do our sentences overlap?</li>
+            <li>Ask: What do we need to release — an assumption, a practice, a priority — to make room for what we're learning?</li>
+            <li>Close by identifying one concrete, shared change you will make in the next ninety days that reflects what this circle has opened.</li>
+          </ol>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ======================== -->
+    <!-- STEP 5 — INTEGRATE       -->
+    <!-- ======================== -->
+    <section class="attend-step" id="step-integrate" data-step="5">
+
+      <div class="step-badge">
+        <span class="step-num-pill">05</span>
+        <span class="step-name-pill">Integrate</span>
+      </div>
+
+      <h2 class="step-heading">What is this circle forming you to become?</h2>
+      <p class="step-intro">A circle like this one does not complete formation. At best it names what formation requires, interrupts what would have continued unchanged, and points toward the kind of ongoing practice that makes it possible. That is not nothing. But it is a beginning, not an arrival. Name what you're carrying forward.</p>
+
+      <div class="formation-summary">
+        <div class="formation-summary-header">
+          <span>Formation Summary — Futures of Innovation</span>
+          <span class="carry-card-date" id="formationDate"></span>
+        </div>
+        <div class="formation-summary-body">
+
+          <div class="formation-summary-field">
+            <span class="formation-summary-label">What has changed in how I understand</span>
+            <p class="formation-summary-hint">Not what you know about innovation — what has genuinely shifted in your understanding of your context, your leadership, or your community's future.</p>
+            <textarea
+              class="attend-textarea formation-summary-fill"
+              data-key="integrate_changed"
+              placeholder="My understanding has shifted in that..."
+              rows="3"
+            ></textarea>
+          </div>
+
+          <div class="formation-summary-field">
+            <span class="formation-summary-label">What remains unfinished</span>
+            <p class="formation-summary-hint">The question, the conversation, or the decision that this circle has surfaced but not resolved. Name it honestly — as something worth continuing to carry, not as a failure.</p>
+            <textarea
+              class="attend-textarea formation-summary-fill"
+              data-key="integrate_unfinished"
+              placeholder="What I'm carrying forward without resolution is..."
+              rows="3"
+            ></textarea>
+          </div>
+
+          <div class="formation-summary-field">
+            <span class="formation-summary-label">The posture I want to inhabit</span>
+            <p class="formation-summary-hint">Not a strategy — a way of standing. What kind of leader and what kind of community does this experience call you toward becoming, over time?</p>
+            <textarea
+              class="attend-textarea formation-summary-fill"
+              data-key="integrate_posture"
+              placeholder="The posture I want to inhabit from here is..."
+              rows="3"
+            ></textarea>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Threshold -->
+      <div class="threshold-section">
+        <div class="threshold-prompt">
+          <span class="threshold-label">Carry Forward</span>
+          <p class="threshold-text">One thing this experience is forming in me — that I want to carry into the next season — is...</p>
+        </div>
+        <div class="threshold-prompt">
+          <span class="threshold-label">Return to This</span>
+          <p class="threshold-text">Come back in thirty days. What has the learning touched? What has remained? What has already begun to fade — and is that loss important?</p>
+        </div>
+      </div>
+
+      <!-- CTA row — Next Steps + Return to Circle -->
+      <div class="integrate-actions">
+        <a href="foi-next-steps.html" class="btn-move-forward">
+          <div class="btn-move-forward-label">
+            <div class="btn-move-forward-next">Application Space</div>
+            <div class="btn-move-forward-name">Next Steps →</div>
+          </div>
+          <span class="btn-forward-arrow">→</span>
+        </a>
+        <p class="integrate-note">You can return to this page at any time — your responses are saved in this browser.</p>
+      </div>
+
+      <a href="futures-innovation.html" class="circle-return">
+        <div>
+          <span class="circle-return-eyebrow">Return to the Circle</span>
+          <span class="circle-return-name">Futures of Innovation</span>
+        </div>
+        <span class="circle-return-arrow">→</span>
       </a>
-    </div>
 
-    <div class="msection">
-      <span class="section-label">Locate Yourself</span>
-      <p>Choose the statement that most honestly reflects where you are right now.</p>
-      <div class="locate-grid">
-        <div class="locate-option">
-          <div class="locate-option-header">
-            <span class="locate-label">Something has genuinely shifted in how I see this, and I want to name it.</span>
-            <span class="locate-chevron">+</span>
-          </div>
-          <div class="locate-response">Name it — even tentatively. The act of articulating a shift is part of how it becomes stable enough to carry forward and act on.</div>
-        </div>
-        <div class="locate-option">
-          <div class="locate-option-header">
-            <span class="locate-label">I've engaged the material but I'm not sure anything has really changed.</span>
-            <span class="locate-chevron">+</span>
-          </div>
-          <div class="locate-response">That's an honest thing to notice. What were you hoping would change? What would it take for this engagement to have been genuinely useful to you?</div>
-        </div>
-        <div class="locate-option">
-          <div class="locate-option-header">
-            <span class="locate-label">I have more questions now than I did when I started.</span>
-            <span class="locate-chevron">+</span>
-          </div>
-          <div class="locate-response">That's often a sign that something real has happened. What are the most important questions you're carrying? Are they questions you're willing to sit with for a season — without forcing a quick resolution?</div>
-        </div>
-        <div class="locate-option">
-          <div class="locate-option-header">
-            <span class="locate-label">I know what has shifted, but I'm not sure what to do with it.</span>
-            <span class="locate-chevron">+</span>
-          </div>
-          <div class="locate-response">The gap between insight and action is normal — and worth honoring rather than rushing past. What would it mean to carry the insight forward without immediately converting it into a plan?</div>
-        </div>
-        <div class="locate-option">
-          <div class="locate-option-header">
-            <span class="locate-label">I'm aware that what I've been learning needs to be shared with the people I lead.</span>
-            <span class="locate-chevron">+</span>
-          </div>
-          <div class="locate-response">That awareness matters. How you carry learning back into a community shapes what it does there. What would it look like to share not just what you've concluded, but what you've experienced?</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="quote-block">
-      <blockquote>"The task ahead is not to control the future, but to become capable of receiving it — faithfully, wisely, and together."</blockquote>
-      <cite>Interpretive Field Guide — Futuring Hub</cite>
-    </div>
-
-    <div class="msection">
-      <span class="section-label">Reflect</span>
-      <ol class="reflect-list">
-        <li>What has most shifted for you through this circle — not what you've learned about innovation, but what has genuinely changed in how you see it, approach it, or lead within it?</li>
-        <li>The field guide asks: "What fears are quietly shaping your approach to innovation more than hope?" Having sat with this material, what is your honest answer? What are you most afraid of losing if you don't innovate — and most afraid of risking if you do?</li>
-        <li>Where do you sense the Spirit's invitation in relation to innovation in your context — not as a strategy to implement, but as a posture to inhabit over the next season?</li>
-      </ol>
-    </div>
-
-    <div class="disruption-block">
-      <span class="disruption-tag">Challenge</span>
-      <h3 class="disruption-title">The Gap Between Insight and Change</h3>
-      <p class="disruption-framing">Learning that changes nothing is not yet formation. Formation shows up in behavior, relationship, and decision over time — not in what we can articulate, but in what we actually do.</p>
-      <p class="disruption-prompt">"You may have learned something here. But have you changed anything? What would be different — in a meeting, a decision, a conversation, a practice — if this learning were genuinely integrated into how you lead?"</p>
-    </div>
-
-    <div class="msection">
-      <span class="section-label">Group Practice</span>
-      <h3 class="group-practice-title">Shared Integration Circle</h3>
-      <ol class="group-practice-steps">
-        <li>Gather the group. Open with two minutes of quiet.</li>
-        <li>Each person completes and shares: "The most honest thing I can say about what has shifted for me is..."</li>
-        <li>After all have shared, the group names together: What are we carrying collectively that we didn't have before?</li>
-        <li>Ask: What do we need to release — an assumption, a practice, a priority — to make room for what we're learning?</li>
-        <li>Close by identifying one concrete, shared change you will make in the next ninety days that reflects what this circle has opened.</li>
-      </ol>
-    </div>
-
-    <div class="msection">
-      <span class="section-label">Micro-Practice</span>
-      <h3 class="micro-practice-title">The Three-Sentence Integration</h3>
-      <p>Write three sentences — not more — in response to this sequence: <em>One thing that has shifted for me is... One question I'm still carrying is... One conversation I need to have in the next thirty days is...</em></p>
-      <div class="micro-aside">
-        <div class="micro-aside-item">
-          <span class="micro-aside-label">Why it matters</span>
-          <p>Integration without articulation tends to dissipate. Three sentences is small enough to do honestly and specific enough to be useful. The constraint matters — resist the urge to expand it.</p>
-        </div>
-        <div class="micro-aside-item">
-          <span class="micro-aside-label">Group version</span>
-          <p>Begin your next team meeting with five minutes where each person shares their three sentences. Listen without debating. Close by naming what the group wants to carry forward together.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="artifact-block">
-      <span class="artifact-type-label">Commentary</span>
-      <h3 class="artifact-title">What Formation Actually Takes</h3>
-      <p>The field guide ends with a sentence that is easy to misread as encouragement: "The task ahead is not to control the future, but to become capable of receiving it." It sounds hopeful. It is also a description of something that requires years, not sessions.</p>
-      <p>Becoming capable of receiving the future faithfully means being formed — in community, over time, through failure and honesty and the slow accumulation of practices that change what you notice, how you decide, and who you are willing to listen to.</p>
-      <p>A circle like this one does not complete that formation. At best, it names what formation requires, interrupts what would have continued unchanged, and points toward the kind of ongoing practice that makes it possible. That is not nothing. But it is a beginning, not an arrival.</p>
-    </div>
-
-    <div class="msection">
-      <span class="section-label">Notice</span>
-      <p><em>What kind of leader — and what kind of community — is this experience forming you to become? The future of innovation in the Canadian Christian landscape will not be shaped by perfect strategies. It will be shaped by leaders willing to pay attention, to learn from one another, to hold tension well, and to take small, faithful steps forward together. What is your next step?</em></p>
-    </div>
-
-    <div class="threshold-section">
-      <div class="threshold-prompt">
-        <span class="threshold-label">Carry Forward</span>
-        <p class="threshold-text">One thing this experience is forming in me — that I want to carry forward — is...</p>
-      </div>
-      <div class="threshold-prompt">
-        <span class="threshold-label">Return to This</span>
-        <p class="threshold-text">Come back to this in thirty days. What has the learning touched? What has remained? What has already begun to fade — and is that loss important?</p>
-      </div>
-    </div>
-
-    <nav class="page-nav">
-      <a href="name-readiness.html">
-        <span class="nav-label">← Previous</span>
-        <span class="nav-name">Name Readiness</span>
-      </a>
-      <a href="futures-innovation.html" class="nav-right">
-        <span class="nav-label">Return to</span>
-        <span class="nav-name">The Circle</span>
-      </a>
-    </nav>
+    </section>
 
   </main>
 
@@ -184,12 +388,65 @@
   </footer>
 
   <script>
-    document.querySelectorAll('.locate-option').forEach(function(option) {
-      option.addEventListener('click', function() {
-        var isActive = this.classList.contains('active');
-        document.querySelectorAll('.locate-option').forEach(function(o) { o.classList.remove('active'); });
-        if (!isActive) this.classList.add('active');
+    var LS = 'learn_';
+    function save(key, val) { localStorage.setItem(LS + key, val); }
+    function load(key) { return localStorage.getItem(LS + key) || ''; }
+
+    // ── Progress tracker ──────────────────────────────────────────────
+    var stepSections  = document.querySelectorAll('.attend-step[data-step]');
+    var progressItems = document.querySelectorAll('.progress-step-item[data-for-step]');
+
+    function updateProgress() {
+      var scrollTop = window.scrollY + window.innerHeight * 0.38;
+      var activeStep = 1;
+      stepSections.forEach(function(section) {
+        if (section.offsetTop <= scrollTop) activeStep = parseInt(section.dataset.step);
       });
+      progressItems.forEach(function(item) {
+        var n = parseInt(item.dataset.forStep);
+        item.classList.remove('active', 'visited');
+        if (n < activeStep)  item.classList.add('visited');
+        if (n === activeStep) item.classList.add('active');
+      });
+    }
+    window.addEventListener('scroll', updateProgress, { passive: true });
+    updateProgress();
+
+    // ── Textarea auto-save ────────────────────────────────────────────
+    document.querySelectorAll('textarea[data-key]').forEach(function(ta) {
+      var key  = LS + ta.dataset.key;
+      var hint = document.getElementById('hint-' + ta.dataset.key);
+      var saved = localStorage.getItem(key);
+      if (saved) ta.value = saved;
+
+      ta.addEventListener('input', function() {
+        localStorage.setItem(key, this.value);
+        if (hint) {
+          hint.classList.add('active');
+          clearTimeout(hint._t);
+          hint._t = setTimeout(function() { hint.classList.remove('active'); }, 1200);
+        }
+      });
+    });
+
+    // ── Integration tiles (single select) ────────────────────────────
+    var savedTile = localStorage.getItem(LS + 'tile');
+    document.querySelectorAll('.integration-tile').forEach(function(tile) {
+      if (savedTile === tile.dataset.tile) tile.classList.add('selected');
+      tile.addEventListener('click', function() {
+        document.querySelectorAll('.integration-tile').forEach(function(t) { t.classList.remove('selected'); });
+        this.classList.add('selected');
+        localStorage.setItem(LS + 'tile', this.dataset.tile);
+      });
+    });
+
+    // ── Date in formation summary ─────────────────────────────────────
+    var fd = document.getElementById('formationDate');
+    if (fd) fd.textContent = new Date().toLocaleDateString('en-CA', { year: 'numeric', month: 'short', day: 'numeric' });
+
+    // ── Group practice toggle ─────────────────────────────────────────
+    document.getElementById('groupPracticeBtn').addEventListener('click', function() {
+      document.getElementById('groupPracticeToggle').classList.toggle('open');
     });
   </script>
 
